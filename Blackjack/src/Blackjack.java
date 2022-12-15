@@ -12,4 +12,5 @@ public class Blackjack {
     public Void nieweSpeler(String naam){
         this.splers.add(new Speler(naam))
     }
-}
+}//test om te zien of github werkt
+
