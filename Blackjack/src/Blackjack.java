@@ -2,14 +2,14 @@ import java.util.List;
 
 public class Blackjack {
     private PakKaarten pakKaarten;
-    private List<Speler> splers;
+    private List<Speler> spelers;
 
-    public Blackjack(PakKaarten pakKaarten, List<Speler> splers) {
+    public Blackjack(PakKaarten pakKaarten, List<Speler> spelers) {
         this.pakKaarten = pakKaarten;
-        this.splers = splers;
+        this.spelers = spelers;
     }
 
     public Void nieweSpeler(String naam){
-        this.splers.add(new Speler(naam))
+        this.spelers.add(new Speler(naam))
     }
 }
