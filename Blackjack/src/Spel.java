@@ -1,10 +1,14 @@
+import java.util.List;
+
 public class Spel {
-    public static void main(String[] args) {
+    private PakKaarten pakKaarten;
+    private List<Speler> spelers;
 
-        Kaart kaart = new Kaart(5,Symbool.HARTEN);
-        System.out.println(kaart);
-
-
-
+    public Spel(PakKaarten pakKaarten, List<Speler> spelers) {
+        this.pakKaarten = pakKaarten;
+        this.spelers = spelers;
     }
+
 }
+
+

@@ -4,7 +4,7 @@
     <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/PakKaarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/PakKaarten.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Spel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Symbool.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Symbool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/Mathis/Desktop/School/OOConcepten/P2W4",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
@@ -51,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671123030817</updated>
       <workItem from="1671123033195" duration="1819000" />
+      <workItem from="1671178275531" duration="2360000" />
     </task>
     <servers />
   </component>
