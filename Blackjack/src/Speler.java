@@ -19,7 +19,15 @@ public class Speler {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Speler{" +
+                "naam='" + naam + '\'' +
+                ", totaal=" + totaal +
+                ", geld=" + geld +
+                ", isKapot=" + isKapot +
+                '}';
+    }
 
     public String getNaam() {
         return naam;

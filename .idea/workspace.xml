@@ -4,9 +4,7 @@
     <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/DemoBlackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/DemoBlackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Spel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/Speler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Speler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/Spel.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671123030817</updated>
       <workItem from="1671123033195" duration="1819000" />
-      <workItem from="1671178275531" duration="5035000" />
+      <workItem from="1671178275531" duration="6005000" />
     </task>
     <servers />
   </component>

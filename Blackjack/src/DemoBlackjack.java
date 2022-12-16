@@ -11,17 +11,21 @@ public class DemoBlackjack {
             aantalSpelers = input.nextInt();
         } while (aantalSpelers <= 0 || aantalSpelers > 5);
 
-        String naam;
-        double geld;
+        String naam = "";
+        double geld = 0;
+
 
         for (int i = 0; i < aantalSpelers; i++) {
-            System.out.print("Wat is de naam van de speler? ");
-            naam = input.nextLine();
-            System.out.print("Hoeveel geld heeft de speler? ");
+            System.out.print("Wat is de naam van speler" +(i+1)+"? ");
+            naam = input.next();
+            System.out.print("Hoeveel geld heeft de speler" +(i+1)+ "? ");
             geld = input.nextDouble();
-            Speler s1 = new Speler(naam,geld);
 
         }
+
+        Speler speler1 = new Speler(naam,geld);
+
+        System.out.println(speler1);
 
 
 
