@@ -9,8 +9,6 @@ public class Blackjack {
         this.spelers = spelers;
     }
 
-    public Void nieweSpeler(String naam){
-        this.spelers.add(new Speler(naam))
-    }
+}
 
 
