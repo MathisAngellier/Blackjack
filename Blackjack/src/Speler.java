@@ -16,4 +16,28 @@ public class Speler {
             this.isKapot = true;
         }
     }
+
+    public String getNaam() {
+        return naam;
+    }
+
+    public void setNaam(String naam) {
+        this.naam = naam;
+    }
+
+    public int getTotaal() {
+        return totaal;
+    }
+
+    public void setTotaal(int totaal) {
+        this.totaal = totaal;
+    }
+
+    public boolean isKapot() {
+        return isKapot;
+    }
+
+    public void setKapot(boolean kapot) {
+        isKapot = kapot;
+    }
 }
