@@ -13,7 +13,7 @@ public class Kaart {
                 "waarde=" + waarde +
                 ", symbool=" + symbool +
                 '}';
-    }
+    }//do u know da wae
 
     public int getWaarde() {
         return waarde;
