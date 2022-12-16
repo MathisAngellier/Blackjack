@@ -1,29 +1,57 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class DemoBlackjack {
     public static void main(String[] args) {
 
-        Speler[] spelers = new Speler[5];
         Scanner input = new Scanner(System.in);
+        //je kan maar met 5 spelers spelen
+        Speler[] spelers = new Speler[5];
+        //nieuw object pakKaarten dat wordt gevuld en geshuffeld
+        PakKaarten pakKaarten = new PakKaarten();
+        pakKaarten.vulKaarten();
+        pakKaarten.schudden();
+
         System.out.println("Welkom bij het spel BLACKJACK");
         int aantalSpelers = 0;
         do {
-            System.out.print("Met hoeveel spelers wil je spelen? ");
+            System.out.print("Met hoeveel spelers wil je spelen tot 5? ");
             aantalSpelers = input.nextInt();
         } while (aantalSpelers <= 0 || aantalSpelers > 5);
 
-        String naam = "";
-        double geld = 0;
-
+        //Spelers initialiseren
         for (int i = 0; i < aantalSpelers; i++) {
             System.out.print("Wat is de naam van speler" +(i+1)+"? ");
-            naam = input.next();
+            String naam = input.next();
             System.out.print("Hoeveel geld heeft de speler" +(i+1)+ "? ");
-            geld = input.nextDouble();
+            int geld = input.nextInt();
             spelers[i] = new Speler(naam,geld);
         }
+
+        //elke speler die nog geld heeft krijgt een prompt om geld in te zetten
+        //er wordt ook gekeken of de inzet niet
+        for (int i = 0; i < aantalSpelers; i++) {
+            if (spelers[i].getGeld() > 0){
+                int inzet;
+                do {
+                    System.out.print("Hoeveel wil je inzetten " + spelers[i].getNaam() + ", je hebt nog " + spelers[i].getGeld()+ ": ");
+                    inzet = input.nextInt();
+                    spelers[i].setInzet(inzet);
+                } while (inzet <= 0 || inzet > spelers[i].getGeld());
+            }
+        }
+
+        //elke speler die nog geld heeft krijgt 2 kaarten in zijn hand
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < aantalSpelers; j++) {
+                if (spelers[j].getGeld() > 0){
+                    spelers[j].voegKaartToe(pakKaarten.volgendeKaart());
+                }
+            }
+        }
+
+        //printen van de spelers
         System.out.print("array van spelers" + Arrays.toString(spelers));
+
     }
 }

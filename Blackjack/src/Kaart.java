@@ -7,6 +7,10 @@ public class Kaart {
         this.symbool = symbool;
     }
 
+    public Kaart() {
+
+    }
+
     @Override
     public String toString() {
         return "Kaart{" +

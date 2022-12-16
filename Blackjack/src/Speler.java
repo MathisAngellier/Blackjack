@@ -1,32 +1,57 @@
 public class Speler {
     private String naam;
-    private int totaal;
-    private double geld;
+    private int geld;
+    private int inzet;
     private boolean isKapot; //als de speler meer dan 21 heeft
+    private Hand hand;
 
-    public Speler(String naam, double geld) {
+    public Speler(String naam, int geld) {
         this.naam = naam;
-        this.totaal = 0;
         this.geld = geld;
         this.isKapot = false;
+        this.hand = new Hand();
     }
 
-    //hier laten we de speler kaarten trekken
-    public void trek(Kaart kaart){
-        this.totaal += kaart.getWaarde();
-        if (this.totaal > 21){
-            this.isKapot = true;
-        }
+    public Speler(String naam, int geld, int inzet, boolean isKapot, Hand hand) {
+        this.naam = naam;
+        this.geld = geld;
+        this.inzet = inzet;
+        this.isKapot = isKapot;
+        this.hand = hand;
     }
 
     @Override
     public String toString() {
         return "Speler{" +
                 "naam='" + naam + '\'' +
-                ", totaal=" + totaal +
                 ", geld=" + geld +
+                ", inzet=" + inzet +
                 ", isKapot=" + isKapot +
+                ", hand=" + hand +
                 '}';
+    }
+    public void voegKaartToe(Kaart kaart){
+        hand.voegKaartToe(kaart);
+    }
+
+    public void verwijderKaart(){
+        hand.verwijderHand();
+    }
+
+    public int getInzet() {
+        return inzet;
+    }
+
+    public void setInzet(int inzet) {
+        this.inzet = inzet;
+    }
+
+    public Hand getHand() {
+        return hand;
+    }
+
+    public void setHand(Hand hand) {
+        this.hand = hand;
     }
 
     public String getNaam() {
@@ -37,19 +62,11 @@ public class Speler {
         this.naam = naam;
     }
 
-    public int getTotaal() {
-        return totaal;
-    }
-
-    public void setTotaal(int totaal) {
-        this.totaal = totaal;
-    }
-
-    public double getGeld() {
+    public int getGeld() {
         return geld;
     }
 
-    public void setGeld(double geld) {
+    public void setGeld(int geld) {
         this.geld = geld;
     }
 
