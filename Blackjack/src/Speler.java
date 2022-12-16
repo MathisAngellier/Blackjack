@@ -1,21 +1,25 @@
 public class Speler {
     private String naam;
     private int totaal;
-    private boolean isKapot; //of de speler meer dan 21 heeft
+    private double geld;
+    private boolean isKapot; //als de speler meer dan 21 heeft
 
-    public Speler(String naam, int totaal, boolean isKapot) {
+    public Speler(String naam, double geld) {
         this.naam = naam;
         this.totaal = 0;
+        this.geld = geld;
         this.isKapot = false;
     }
 
     //hier laten we de speler kaarten trekken
-    public void trek(int kaart){
-        this.totaal += kaart;
+    public void trek(Kaart kaart){
+        this.totaal += kaart.getWaarde();
         if (this.totaal > 21){
             this.isKapot = true;
         }
     }
+
+
 
     public String getNaam() {
         return naam;
@@ -31,6 +35,14 @@ public class Speler {
 
     public void setTotaal(int totaal) {
         this.totaal = totaal;
+    }
+
+    public double getGeld() {
+        return geld;
+    }
+
+    public void setGeld(double geld) {
+        this.geld = geld;
     }
 
     public boolean isKapot() {
