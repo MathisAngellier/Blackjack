@@ -18,6 +18,10 @@ public class Dealer {
         return hand.dealerEersteKaart();
     }
 
+    public int getTotaal(){
+        return hand.berekenTotaal();
+    }
+
     @Override
     public String toString() {
         return "Dealer{" +

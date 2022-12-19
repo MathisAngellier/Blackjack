@@ -22,6 +22,10 @@ public class Speler {
                 ", hand=" + hand +
                 '}';
     }
+    public int getTotaal(){
+        return hand.berekenTotaal();
+    }
+
     public void voegKaartToe(Kaart kaart){
         hand.voegKaartToe(kaart);
     }

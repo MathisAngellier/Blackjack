@@ -1,10 +1,10 @@
 public class Kaart {
     private int waarde;
-    private Symbool symbool;
+    private String kleur;
 
-    public Kaart(int waarde, Symbool symbool) {
+    public Kaart(int waarde, String kleur) {
         this.waarde = waarde;
-        this.symbool = symbool;
+        this.kleur = kleur;
     }
 
     public Kaart() {
@@ -13,7 +13,23 @@ public class Kaart {
 
     @Override
     public String toString() {
-        return symbool+" "+ waarde+" ";
+        if (waarde > 10){
+            return prentNaam() +" "+ waarde+" ";
+        } else {
+            return kleur+" "+waarde+" ";
+        }
+
+    }
+
+    public String prentNaam(){
+        String naam = "";
+        switch (waarde){
+            case 1: naam = "Aas"; waarde = 10; break;
+            case 11: naam = "Boer"; waarde = 10; break;
+            case 12: naam = "Dame"; waarde = 10; break;
+            case 13: naam = "Koning"; waarde = 10; break;
+        }
+        return naam;
     }
 
     public int getWaarde() {
@@ -24,11 +40,11 @@ public class Kaart {
         this.waarde = waarde;
     }
 
-    public Symbool getSymbool() {
-        return symbool;
+    public String getKleur() {
+        return kleur;
     }
 
-    public void setSymbool(Symbool symbool) {
-        this.symbool = symbool;
+    public void setKleur(String kleur) {
+        this.kleur = kleur;
     }
 }

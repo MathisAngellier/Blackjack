@@ -13,6 +13,8 @@ public class DemoBlackjack {
         pakKaarten.vulKaarten();
         pakKaarten.schudden();
 
+        System.out.println(pakKaarten);
+
         System.out.println("Welkom bij het spel BLACKJACK");
         int aantalSpelers = 0;
         do {
@@ -57,33 +59,41 @@ public class DemoBlackjack {
         //toont de kaarten aan de speler en laat het totaal zien en laat dan vragen of hij wil hitten of folden
         for (int i = 0; i < aantalSpelers; i++) {
             System.out.println(spelers[i].getNaam() + " dit zijn je kaarten: " + spelers[i].getHand());
-            System.out.println("Je totaal is: " + spelers[i].getHand().berekenTotaal());
+            System.out.println("Je totaal is: " + spelers[i].getTotaal());
             char keuze;
             do {
                 System.out.print("Wil je een extra kaart(H) of wil je stoppen(F): ");
                 keuze = input.next().toUpperCase().charAt(0);
             } while (keuze != 'H' && keuze != 'F');
             if (keuze == 'H'){
-                while (keuze == 'H') {
+                if (spelers[i].getTotaal() >= 21){
+                    //methode vergelijk dealer ofzo
+                }
+                while (keuze == 'H' && spelers[i].getTotaal() < 21) {
                     spelers[i].voegKaartToe(pakKaarten.volgendeKaart());
-                    System.out.println("Dit is je nieuwe hand " + spelers[i].getHand());
-                    System.out.println("Je totaal is: " + spelers[i].getHand().berekenTotaal());
+                    System.out.println("Dit is je nieuwe hand: " + spelers[i].getHand());
+                    System.out.println("Je totaal is: " + spelers[i].getTotaal());
                     do {
                         System.out.print("Wil je een extra kaart(H) of wil je stoppen(F): ");
                         keuze = input.next().toUpperCase().charAt(0);
                     } while (keuze != 'H' && keuze != 'F');
                 }
-
-            } else {
-                //hier moeten de bets berekent worden denk ik
             }
         }
+
+        //hier speelt de dealer
+        while(dealer.getTotaal() < 17){
+            System.out.println("De dealer heeft " + dealer);
+        }
+
 
         //printen van de spelers
         System.out.print("array van spelers" + Arrays.toString(spelers));
         System.out.println(dealer);
 
+    }
 
+    public void vergelijkDealer(){
 
     }
 }

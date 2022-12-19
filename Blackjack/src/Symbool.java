@@ -4,3 +4,5 @@ public enum Symbool {
     SCHOPPEN,
     KLAVEREN
 }
+
+
