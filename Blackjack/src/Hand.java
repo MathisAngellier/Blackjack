@@ -6,6 +6,10 @@ public class Hand {
     private Kaart[] hand = new Kaart[10];
     private int aantalKaarten = 0;
 
+    public Hand(){
+
+    }
+
     public void voegKaartToe(Kaart kaart){
         hand[aantalKaarten++] = kaart;
     }
@@ -22,8 +26,19 @@ public class Hand {
         return totaal;
     }
 
+    public int dealerEersteKaart(){
+        int waardeKaart = hand[0].getWaarde();
+        return waardeKaart;
+    }
+
+
     @Override
     public String toString() {
-        return Arrays.toString(hand);
+        StringBuilder handTekst= new StringBuilder();
+        for (Kaart kaart : hand) {
+            if (kaart != null)
+                handTekst.append(kaart);
+        }
+        return handTekst.toString();
     }
 }

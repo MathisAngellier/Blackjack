@@ -13,11 +13,8 @@ public class Kaart {
 
     @Override
     public String toString() {
-        return "Kaart{" +
-                "waarde=" + waarde +
-                ", symbool=" + symbool +
-                '}';
-    }//do u know da wae
+        return symbool+" "+ waarde+" ";
+    }
 
     public int getWaarde() {
         return waarde;

@@ -7,6 +7,7 @@ public class DemoBlackjack {
         Scanner input = new Scanner(System.in);
         //je kan maar met 5 spelers spelen
         Speler[] spelers = new Speler[5];
+        Dealer dealer = new Dealer();
         //nieuw object pakKaarten dat wordt gevuld en geshuffeld
         PakKaarten pakKaarten = new PakKaarten();
         pakKaarten.vulKaarten();
@@ -41,17 +42,48 @@ public class DemoBlackjack {
             }
         }
 
-        //elke speler die nog geld heeft krijgt 2 kaarten in zijn hand
+        //elke speler die nog geld heeft krijgt 2 kaarten in zijn hand + de dealer krijgt ook zijn 2 kaarten
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < aantalSpelers; j++) {
                 if (spelers[j].getGeld() > 0){
                     spelers[j].voegKaartToe(pakKaarten.volgendeKaart());
                 }
             }
+            dealer.voegKaartToe(pakKaarten.volgendeKaart());
+        }
+
+        System.out.println("De eerste kaart van de dealer is " + dealer.eersteKaart());
+
+        //toont de kaarten aan de speler en laat het totaal zien en laat dan vragen of hij wil hitten of folden
+        for (int i = 0; i < aantalSpelers; i++) {
+            System.out.println(spelers[i].getNaam() + " dit zijn je kaarten: " + spelers[i].getHand());
+            System.out.println("Je totaal is: " + spelers[i].getHand().berekenTotaal());
+            char keuze;
+            do {
+                System.out.print("Wil je een extra kaart(H) of wil je stoppen(F): ");
+                keuze = input.next().toUpperCase().charAt(0);
+            } while (keuze != 'H' && keuze != 'F');
+            if (keuze == 'H'){
+                while (keuze == 'H') {
+                    spelers[i].voegKaartToe(pakKaarten.volgendeKaart());
+                    System.out.println("Dit is je nieuwe hand " + spelers[i].getHand());
+                    System.out.println("Je totaal is: " + spelers[i].getHand().berekenTotaal());
+                    do {
+                        System.out.print("Wil je een extra kaart(H) of wil je stoppen(F): ");
+                        keuze = input.next().toUpperCase().charAt(0);
+                    } while (keuze != 'H' && keuze != 'F');
+                }
+
+            } else {
+                //hier moeten de bets berekent worden denk ik
+            }
         }
 
         //printen van de spelers
         System.out.print("array van spelers" + Arrays.toString(spelers));
+        System.out.println(dealer);
+
+
 
     }
 }

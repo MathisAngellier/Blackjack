@@ -12,14 +12,6 @@ public class Speler {
         this.hand = new Hand();
     }
 
-    public Speler(String naam, int geld, int inzet, boolean isKapot, Hand hand) {
-        this.naam = naam;
-        this.geld = geld;
-        this.inzet = inzet;
-        this.isKapot = isKapot;
-        this.hand = hand;
-    }
-
     @Override
     public String toString() {
         return "Speler{" +
