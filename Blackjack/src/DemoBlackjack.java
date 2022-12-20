@@ -25,6 +25,7 @@ public class DemoBlackjack {
         //Spelers initialiseren
         for (int i = 0; i < aantalSpelers; i++) {
             System.out.print("Wat is de naam van speler" +(i+1)+"? ");
+
             String naam = input.next();
             System.out.print("Hoeveel geld heeft de speler" +(i+1)+ "? ");
             int geld = input.nextInt();
@@ -82,8 +83,9 @@ public class DemoBlackjack {
         }
 
         //hier speelt de dealer
-        while(dealer.getTotaal() < 17){
+         while (dealer.getTotaal() < 17){
             System.out.println("De dealer heeft " + dealer);
+            dealer.voegKaartToe(pakKaarten.volgendeKaart());
         }
 
 
