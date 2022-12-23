@@ -24,21 +24,21 @@ public class DemoBlackjack {
 
         //Spelers initialiseren
         for (int i = 0; i < aantalSpelers; i++) {
-            System.out.print("Wat is de naam van speler" +(i+1)+"? ");
+            System.out.print("Wat is de naam van speler" + (i + 1) + "? ");
 
             String naam = input.next();
-            System.out.print("Hoeveel geld heeft de speler" +(i+1)+ "? ");
+            System.out.print("Hoeveel geld heeft de speler" + (i + 1) + "? ");
             int geld = input.nextInt();
-            spelers[i] = new Speler(naam,geld);
+            spelers[i] = new Speler(naam, geld);
         }
 
         //elke speler die nog geld heeft krijgt een prompt om geld in te zetten
         //er wordt ook gekeken of de inzet niet
         for (int i = 0; i < aantalSpelers; i++) {
-            if (spelers[i].getGeld() > 0){
+            if (spelers[i].getGeld() > 0) {
                 int inzet;
                 do {
-                    System.out.print("Hoeveel wil je inzetten " + spelers[i].getNaam() + ", je hebt nog " + spelers[i].getGeld()+ ": ");
+                    System.out.print("Hoeveel wil je inzetten " + spelers[i].getNaam() + ", je hebt nog " + spelers[i].getGeld() + ": ");
                     inzet = input.nextInt();
                     spelers[i].setInzet(inzet);
                 } while (inzet <= 0 || inzet > spelers[i].getGeld());
@@ -48,7 +48,7 @@ public class DemoBlackjack {
         //elke speler die nog geld heeft krijgt 2 kaarten in zijn hand + de dealer krijgt ook zijn 2 kaarten
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < aantalSpelers; j++) {
-                if (spelers[j].getGeld() > 0){
+                if (spelers[j].getGeld() > 0) {
                     spelers[j].voegKaartToe(pakKaarten.volgendeKaart());
                 }
             }
@@ -66,8 +66,8 @@ public class DemoBlackjack {
                 System.out.print("Wil je een extra kaart(H) of wil je stoppen(F): ");
                 keuze = input.next().toUpperCase().charAt(0);
             } while (keuze != 'H' && keuze != 'F');
-            if (keuze == 'H'){
-                if (spelers[i].getTotaal() >= 21){
+            if (keuze == 'H') {
+                if (spelers[i].getTotaal() >= 21) {
                     //methode vergelijk dealer ofzo
                 }
                 while (keuze == 'H' && spelers[i].getTotaal() < 21) {
@@ -83,7 +83,7 @@ public class DemoBlackjack {
         }
 
         //hier speelt de dealer
-         while (dealer.getTotaal() < 17){
+        while (dealer.getTotaal() < 17) {
             System.out.println("De dealer heeft " + dealer);
             dealer.voegKaartToe(pakKaarten.volgendeKaart());
         }
@@ -95,7 +95,7 @@ public class DemoBlackjack {
 
     }
 
-    public void vergelijkDealer(){
+    public void vergelijkDealer() {
 
     }
 }

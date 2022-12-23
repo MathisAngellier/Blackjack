@@ -7,7 +7,7 @@ public class Kaart {
         this.kleur = kleur;
     }
 
-    public Kaart() {
+    public Kaart(int i, Symbool klaveren) {
 
     }
 
