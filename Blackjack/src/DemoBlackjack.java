@@ -1,3 +1,7 @@
+import model.Dealer;
+import model.PakKaarten;
+import model.Speler;
+
 import java.util.Arrays;
 import java.util.Scanner;
 

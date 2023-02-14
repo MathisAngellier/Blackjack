@@ -1,3 +1,8 @@
+package model;
+
+import model.Hand;
+import model.Kaart;
+
 public class Dealer {
 
     private Hand hand;
@@ -24,7 +29,7 @@ public class Dealer {
 
     @Override
     public String toString() {
-        return "Dealer{" +
+        return "model.Dealer{" +
                 "hand=" + hand +
                 '}';
     }

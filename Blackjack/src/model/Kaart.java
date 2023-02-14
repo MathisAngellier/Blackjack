@@ -1,3 +1,5 @@
+package model;
+
 public class Kaart {
     private int waarde;
     private String kleur;

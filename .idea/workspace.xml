@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/PakkaartenExc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2022_08_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2022_08_36__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/view/Presenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_12_2022_13_24_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_12_2022_13_24__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Dealer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/DemoBlackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/DemoBlackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/Kaart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Kaart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/GeldOphalen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/GeldOphalen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/GeldOpslaan.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/GeldOpslaan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Kaart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Kaart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/NewGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/NewGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/PakKaarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/PakKaarten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/PakkaartenExc.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/PakkaartenExc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Speler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Speler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Symbool.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Symbool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +58,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/Mathis/Desktop/School/OOConcepten/P2W4",
-    "settings.editor.selected.configurable": "inlay.hints"
+    "last_opened_file_path": "C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.web.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,6 +80,9 @@
       <updated>1671123030817</updated>
       <workItem from="1671123033195" duration="1819000" />
       <workItem from="1671178275531" duration="5035000" />
+      <workItem from="1671790100841" duration="1015000" />
+      <workItem from="1674124821556" duration="9000" />
+      <workItem from="1676396094482" duration="347000" />
     </task>
     <servers />
   </component>
@@ -75,5 +102,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blackjack/src/view/View.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

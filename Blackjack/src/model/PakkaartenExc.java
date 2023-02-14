@@ -1,3 +1,5 @@
+package model;
+
 public class PakkaartenExc extends Exception {
     public PakkaartenExc() {
     }
