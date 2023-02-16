@@ -4,7 +4,7 @@ import model.Speler;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+//TODO logica uit main halen en in aparte spel klasse zetten zodat alleen input&output in main staan
 public class DemoBlackjack {
     public static void main(String[] args) {
 
