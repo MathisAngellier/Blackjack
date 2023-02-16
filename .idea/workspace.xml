@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="niewe main begonninn want we moeten alle logica uit de main halen">
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/Blackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="niewe main begonninn want we moeten alle logica uit de main halen, logica gaat naar klasse spel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +69,7 @@
       <workItem from="1671790100841" duration="1015000" />
       <workItem from="1674124821556" duration="9000" />
       <workItem from="1676396094482" duration="648000" />
-      <workItem from="1676554992342" duration="4273000" />
+      <workItem from="1676554992342" duration="4618000" />
     </task>
     <task id="LOCAL-00001" summary="klasses in juiste packages gezet, we kunnen al beginnen aan de view package, maar de model package is nog wel niet af">
       <created>1676396593603</created>
@@ -95,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676564637580</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="niewe main begonninn want we moeten alle logica uit de main halen, logica gaat naar klasse spel">
+      <created>1676565256063</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676565256063</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +122,7 @@
     <MESSAGE value="moeten logica uit main halen" />
     <MESSAGE value="afbeeldingen voor de kaarten toegevoegd in de map images.pakkaarten" />
     <MESSAGE value="niewe main begonninn want we moeten alle logica uit de main halen" />
-    <option name="LAST_COMMIT_MESSAGE" value="niewe main begonninn want we moeten alle logica uit de main halen" />
+    <MESSAGE value="niewe main begonninn want we moeten alle logica uit de main halen, logica gaat naar klasse spel" />
+    <option name="LAST_COMMIT_MESSAGE" value="niewe main begonninn want we moeten alle logica uit de main halen, logica gaat naar klasse spel" />
   </component>
 </project>
