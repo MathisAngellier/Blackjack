@@ -7,7 +7,6 @@ import java.util.Scanner;
 //TODO logica uit main halen en in aparte spel klasse zetten zodat alleen input&output in main staan
 public class DemoBlackjack {
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
         //je kan maar met 5 spelers spelen
         Speler[] spelers = new Speler[5];
