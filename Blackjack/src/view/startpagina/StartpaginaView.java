@@ -1,13 +1,13 @@
-package view;
+package view.startpagina;
 
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
-public class View extends BorderPane {
+public class StartpaginaView extends BorderPane {
     private Button niewegame;
     private Button loadgame;
-    public View() {
+    public StartpaginaView() {
         initialiseNodes();
         layoutNodes();
     }

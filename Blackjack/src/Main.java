@@ -2,16 +2,16 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.Spel;
-import view.Presenter;
-import view.View;
+import view.startpagina.StartpaginaPresenter;
+import view.startpagina.StartpaginaView;
 
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Spel blackjack = new Spel();
-        View view = new View();
-        Presenter presenter = new Presenter(blackjack, view);
-        Scene scene = new Scene(view);
+        StartpaginaView startpaginaView = new StartpaginaView();
+        StartpaginaPresenter presenter = new StartpaginaPresenter(blackjack, startpaginaView);
+        Scene scene = new Scene(startpaginaView);
         stage.setTitle("Blackjack");
         stage.setHeight(450);
         stage.setWidth(800);
