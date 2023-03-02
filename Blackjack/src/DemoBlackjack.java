@@ -9,8 +9,8 @@ public class DemoBlackjack {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         //je kan maar met 5 spelers spelen
-        Speler[] spelers = new Speler[5];
-        Dealer dealer = new Dealer();
+       // SPEL Speler[] spelers = new Speler[5];
+        //Dealer dealer = new Dealer();
         //nieuw object pakKaarten dat wordt gevuld en geshuffeld
         PakKaarten pakKaarten = new PakKaarten();
         pakKaarten.vulKaarten();

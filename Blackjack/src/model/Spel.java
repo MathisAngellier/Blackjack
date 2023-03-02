@@ -1,17 +1,16 @@
 package model;
 
-import java.util.List;
+
 //TODO alle logica naar hier verplaatsen
 public class Spel {
-    private List<Speler> spelers;
-
-    public Spel(List<Speler> spelers) {
-        this.spelers = spelers;
-    }
-
+    private Speler[] spelers ;
 
     public Spel() {
-
+        spelers = new Speler[5];
+        Dealer dealer = new Dealer();
+        PakKaarten pakKaarten = new PakKaarten();
+        pakKaarten.vulKaarten();
+        pakKaarten.schudden();
     }
 }
 
