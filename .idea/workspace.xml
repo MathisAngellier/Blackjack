@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="afbeeldingen voor al de kaarten toegevoegd">
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/Launcher.java" afterDir="false" />
+    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="launcher en begin main aangemaakt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/Presenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/View.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
       <workItem from="1676396094482" duration="648000" />
       <workItem from="1676554992342" duration="4618000" />
       <workItem from="1676573718970" duration="1533000" />
-      <workItem from="1677761688980" duration="2350000" />
+      <workItem from="1677761688980" duration="5514000" />
     </task>
     <task id="LOCAL-00001" summary="klasses in juiste packages gezet, we kunnen al beginnen aan de view package, maar de model package is nog wel niet af">
       <created>1676396593603</created>
@@ -130,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676573882942</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="launcher en begin main aangemaakt">
+      <created>1677764154121</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677764154121</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +161,7 @@
     <MESSAGE value="niewe main begonninn want we moeten alle logica uit de main halen" />
     <MESSAGE value="niewe main begonninn want we moeten alle logica uit de main halen, logica gaat naar klasse spel" />
     <MESSAGE value="afbeeldingen voor al de kaarten toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="afbeeldingen voor al de kaarten toegevoegd" />
+    <MESSAGE value="launcher en begin main aangemaakt" />
+    <option name="LAST_COMMIT_MESSAGE" value="launcher en begin main aangemaakt" />
   </component>
 </project>
