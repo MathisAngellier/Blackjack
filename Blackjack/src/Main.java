@@ -13,6 +13,8 @@ public class Main extends Application {
         Presenter presenter = new Presenter(blackjack, view);
         Scene scene = new Scene(view);
         stage.setTitle("Blackjack");
+        stage.setHeight(450);
+        stage.setWidth(800);
         stage.setScene(scene);
         stage.show();
     }
