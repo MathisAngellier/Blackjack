@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="niewe main begonninn want we moeten alle logica uit de main halen, logica gaat naar klasse spel" />
+    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="afbeeldingen voor al de kaarten toegevoegd">
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/View.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/Minesweeper",
+    "last_opened_file_path": "C:/Users/alekd/OneDrive/Bureaublad/School/2022-2023/OO Concepten/Paint",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,9 +59,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alekd\OneDrive\Documenten\GitHub\Blackjack\Blackjack\src\view\images\pakKaarten" />
       <recent name="C:\Users\alekd\OneDrive\Documenten\GitHub\Blackjack\Blackjack\src\view\images\pakkaarten" />
       <recent name="C:\Users\alekd\OneDrive\Documenten\GitHub\Blackjack\Blackjack\src\view\images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Launcher" />
+      <module name="Blackjack" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Launcher" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,6 +92,8 @@
       <workItem from="1674124821556" duration="9000" />
       <workItem from="1676396094482" duration="648000" />
       <workItem from="1676554992342" duration="4618000" />
+      <workItem from="1676573718970" duration="1533000" />
+      <workItem from="1677761688980" duration="2350000" />
     </task>
     <task id="LOCAL-00001" summary="klasses in juiste packages gezet, we kunnen al beginnen aan de view package, maar de model package is nog wel niet af">
       <created>1676396593603</created>
@@ -99,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676565256063</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="afbeeldingen voor al de kaarten toegevoegd">
+      <created>1676573882942</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676573882942</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +154,7 @@
     <MESSAGE value="afbeeldingen voor de kaarten toegevoegd in de map images.pakkaarten" />
     <MESSAGE value="niewe main begonninn want we moeten alle logica uit de main halen" />
     <MESSAGE value="niewe main begonninn want we moeten alle logica uit de main halen, logica gaat naar klasse spel" />
-    <option name="LAST_COMMIT_MESSAGE" value="niewe main begonninn want we moeten alle logica uit de main halen, logica gaat naar klasse spel" />
+    <MESSAGE value="afbeeldingen voor al de kaarten toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="afbeeldingen voor al de kaarten toegevoegd" />
   </component>
 </project>

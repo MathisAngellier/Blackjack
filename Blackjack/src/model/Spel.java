@@ -10,7 +10,9 @@ public class Spel {
     }
 
 
+    public Spel() {
 
+    }
 }
 
 
