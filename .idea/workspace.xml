@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="commit om rollback te hebben want klasse spel word verwijderd">
+    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="einde les 2/03">
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/model/BlackjackFileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/DemoBlackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/DemoBlackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/GeldOphalen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/GeldOpslaan.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/alekd/OneDrive/Bureaublad/School/2022-2023/OO Concepten/Paint",
+    "last_opened_file_path": "C:/Users/alekd/Downloads/myWoordle_startcode",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,7 +100,9 @@
       <workItem from="1676396094482" duration="648000" />
       <workItem from="1676554992342" duration="4618000" />
       <workItem from="1676573718970" duration="1533000" />
-      <workItem from="1677761688980" duration="11079000" />
+      <workItem from="1677761688980" duration="11422000" />
+      <workItem from="1678109441869" duration="36000" />
+      <workItem from="1678366246800" duration="2632000" />
     </task>
     <task id="LOCAL-00001" summary="klasses in juiste packages gezet, we kunnen al beginnen aan de view package, maar de model package is nog wel niet af">
       <created>1676396593603</created>
@@ -172,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677770874131</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="einde les 2/03">
+      <created>1677773149196</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677773149196</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +211,7 @@
     <MESSAGE value="pagina een standaart grootte gegeven" />
     <MESSAGE value="views en presenterklasses voor alle verschillende scenes klaargezet" />
     <MESSAGE value="commit om rollback te hebben want klasse spel word verwijderd" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit om rollback te hebben want klasse spel word verwijderd" />
+    <MESSAGE value="einde les 2/03" />
+    <option name="LAST_COMMIT_MESSAGE" value="einde les 2/03" />
   </component>
 </project>
