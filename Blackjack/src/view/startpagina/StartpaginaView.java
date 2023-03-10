@@ -26,7 +26,15 @@ public class StartpaginaView extends BorderPane {
         gp.setBackground(new Background(new BackgroundFill(Color.GREEN, null, null)));
         gp.add(niewegame, 0, 0);
         gp.add(loadgame,1,0);
+        setTop(gp);
 
     }
 
+    public Button getNiewegame() {
+        return niewegame;
+    }
+
+    public Button getLoadgame() {
+        return loadgame;
+    }
 }

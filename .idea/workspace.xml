@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="einde les 2/03">
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/model/BlackjackFileManager.java" afterDir="false" />
+    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="File manager aangemaakt, nog wel leeg, ga deze maken wanneer we daar zijn in de main, maar als ge wilt fix da dan al, zou handing zijn, of als gy main wilt maken dan fix ik dees wel als ge da nodig hebt">
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/GeldOphalen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/GeldOpslaan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/DemoBlackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/DemoBlackjack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/DemoBlackjack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/GeldOphalen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/GeldOpslaan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +73,7 @@
       <recent name="C:\Users\alekd\OneDrive\Documenten\GitHub\Blackjack\Blackjack\src\view\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DemoBlackjack">
+  <component name="RunManager" selected="Application.Launcher">
     <configuration name="DemoBlackjack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DemoBlackjack" />
       <module name="Blackjack" />
@@ -80,8 +90,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DemoBlackjack" />
         <item itemvalue="Application.Launcher" />
+        <item itemvalue="Application.DemoBlackjack" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +112,7 @@
       <workItem from="1676573718970" duration="1533000" />
       <workItem from="1677761688980" duration="11422000" />
       <workItem from="1678109441869" duration="36000" />
-      <workItem from="1678366246800" duration="2632000" />
+      <workItem from="1678366246800" duration="6301000" />
     </task>
     <task id="LOCAL-00001" summary="klasses in juiste packages gezet, we kunnen al beginnen aan de view package, maar de model package is nog wel niet af">
       <created>1676396593603</created>
@@ -181,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677773149196</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="File manager aangemaakt, nog wel leeg, ga deze maken wanneer we daar zijn in de main, maar als ge wilt fix da dan al, zou handing zijn, of als gy main wilt maken dan fix ik dees wel als ge da nodig hebt">
+      <created>1678375235288</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678375235288</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +229,7 @@
     <MESSAGE value="views en presenterklasses voor alle verschillende scenes klaargezet" />
     <MESSAGE value="commit om rollback te hebben want klasse spel word verwijderd" />
     <MESSAGE value="einde les 2/03" />
-    <option name="LAST_COMMIT_MESSAGE" value="einde les 2/03" />
+    <MESSAGE value="File manager aangemaakt, nog wel leeg, ga deze maken wanneer we daar zijn in de main, maar als ge wilt fix da dan al, zou handing zijn, of als gy main wilt maken dan fix ik dees wel als ge da nodig hebt" />
+    <option name="LAST_COMMIT_MESSAGE" value="File manager aangemaakt, nog wel leeg, ga deze maken wanneer we daar zijn in de main, maar als ge wilt fix da dan al, zou handing zijn, of als gy main wilt maken dan fix ik dees wel als ge da nodig hebt" />
   </component>
 </project>

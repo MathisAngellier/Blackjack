@@ -1,4 +1,4 @@
-import model.Dealer;
+/*import model.Dealer;
 import model.PakKaarten;
 import model.Speler;
 
@@ -101,4 +101,4 @@ public class DemoBlackjack {
     public void vergelijkDealer() {
 
     }
-}
+}*/
