@@ -1,16 +1,28 @@
 package model;
 
+import javax.swing.text.html.ImageView;
+import java.awt.*;
+
 public class Kaart {
     private int waarde;
     private String kleur;
+    private ImageView imageView;
 
-    public Kaart(int waarde, String kleur) {
+    public Kaart(int waarde, String kleur ) {
         this.waarde = waarde;
         this.kleur = kleur;
     }
 
     public Kaart(int i, Symbool klaveren) {
 
+    }
+
+    public ImageView getImageView() {
+        return imageView;
+    }
+
+    public void setImageView(ImageView imageView) {
+        this.imageView = imageView;
     }
 
     @Override
