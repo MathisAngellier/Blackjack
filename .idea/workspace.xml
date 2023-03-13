@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="knop om van resultatenpagina naar startpagina te gaan">
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/recourses/startpaginaAfbeeldingKlein.png" afterDir="false" />
+    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="idk wa ik gedaan heb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,25 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/alekd/OneDrive/Documenten/GitHub/Blackjack/Blackjack/src/recourses",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/animatie&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alekd\OneDrive\Documenten\GitHub\Blackjack\Blackjack\src\recourses" />
@@ -109,7 +108,9 @@
       <workItem from="1678109441869" duration="36000" />
       <workItem from="1678366246800" duration="6301000" />
       <workItem from="1678624563748" duration="1051000" />
-      <workItem from="1678694334192" duration="4741000" />
+      <workItem from="1678694334192" duration="5586000" />
+      <workItem from="1678709387657" duration="343000" />
+      <workItem from="1678715072022" duration="1002000" />
     </task>
     <task id="LOCAL-00001" summary="klasses in juiste packages gezet, we kunnen al beginnen aan de view package, maar de model package is nog wel niet af">
       <created>1676396593603</created>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678703402850</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="idk wa ik gedaan heb">
+      <created>1678706224663</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678706224663</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +243,7 @@
     <MESSAGE value="einde les 2/03" />
     <MESSAGE value="File manager aangemaakt, nog wel leeg, ga deze maken wanneer we daar zijn in de main, maar als ge wilt fix da dan al, zou handing zijn, of als gy main wilt maken dan fix ik dees wel als ge da nodig hebt" />
     <MESSAGE value="knop om van resultatenpagina naar startpagina te gaan" />
-    <option name="LAST_COMMIT_MESSAGE" value="knop om van resultatenpagina naar startpagina te gaan" />
+    <MESSAGE value="idk wa ik gedaan heb" />
+    <option name="LAST_COMMIT_MESSAGE" value="idk wa ik gedaan heb" />
   </component>
 </project>

@@ -23,10 +23,11 @@ public class StartpaginaView extends BorderPane {
     }
     private void layoutNodes() {
         GridPane gp = new GridPane();
-        gp.setBackground(new Background(new BackgroundFill(Color.GREEN, null, null)));
+        gp.setBackground(new Background(new BackgroundFill(Color.BLACK, null, null)));
         gp.add(niewegame, 0, 0);
         gp.add(loadgame,1,0);
         gp.add(label,0,1);
+        GridPane.setColumnSpan(label, GridPane.REMAINING);
         setTop(gp);
 
     }
