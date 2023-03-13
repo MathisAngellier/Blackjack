@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="File manager aangemaakt, nog wel leeg, ga deze maken wanneer we daar zijn in de main, maar als ge wilt fix da dan al, zou handing zijn, of als gy main wilt maken dan fix ik dees wel als ge da nodig hebt">
+    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="knop om van resultatenpagina naar startpagina te gaan">
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/recourses/startpaginaAfbeeldingKlein.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/Uitbreiding03",
+    "last_opened_file_path": "C:/Users/alekd/OneDrive/Documenten/GitHub/Blackjack/Blackjack/src/recourses",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,6 +58,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alekd\OneDrive\Documenten\GitHub\Blackjack\Blackjack\src\recourses" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alekd\OneDrive\Documenten\GitHub\Blackjack\Blackjack\src\recourses" />
       <recent name="C:\Users\alekd\OneDrive\Documenten\GitHub\Blackjack\Blackjack\src\view\images\pakKaarten" />
@@ -104,7 +109,7 @@
       <workItem from="1678109441869" duration="36000" />
       <workItem from="1678366246800" duration="6301000" />
       <workItem from="1678624563748" duration="1051000" />
-      <workItem from="1678694334192" duration="3052000" />
+      <workItem from="1678694334192" duration="4741000" />
     </task>
     <task id="LOCAL-00001" summary="klasses in juiste packages gezet, we kunnen al beginnen aan de view package, maar de model package is nog wel niet af">
       <created>1676396593603</created>
@@ -190,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678375235288</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="knop om van resultatenpagina naar startpagina te gaan">
+      <created>1678703402850</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678703402850</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +234,7 @@
     <MESSAGE value="commit om rollback te hebben want klasse spel word verwijderd" />
     <MESSAGE value="einde les 2/03" />
     <MESSAGE value="File manager aangemaakt, nog wel leeg, ga deze maken wanneer we daar zijn in de main, maar als ge wilt fix da dan al, zou handing zijn, of als gy main wilt maken dan fix ik dees wel als ge da nodig hebt" />
-    <option name="LAST_COMMIT_MESSAGE" value="File manager aangemaakt, nog wel leeg, ga deze maken wanneer we daar zijn in de main, maar als ge wilt fix da dan al, zou handing zijn, of als gy main wilt maken dan fix ik dees wel als ge da nodig hebt" />
+    <MESSAGE value="knop om van resultatenpagina naar startpagina te gaan" />
+    <option name="LAST_COMMIT_MESSAGE" value="knop om van resultatenpagina naar startpagina te gaan" />
   </component>
 </project>

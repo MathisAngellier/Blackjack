@@ -10,13 +10,13 @@ import javafx.scene.paint.Color;
 public class StartpaginaView extends BorderPane {
     private Button niewegame;
     private Button loadgame;
+    private Label label;
     public StartpaginaView() {
         initialiseNodes();
         layoutNodes();
     }
     private void initialiseNodes() {
-        Label label = new Label();
-        label = new Label("", new ImageView("recourses/startpaginaAfbeelding.png"));
+        label = new Label("", new ImageView("recourses/startpaginaAfbeeldingKlein.png"));
         niewegame = new Button("niew");
         loadgame = new Button("load");
 
@@ -26,6 +26,7 @@ public class StartpaginaView extends BorderPane {
         gp.setBackground(new Background(new BackgroundFill(Color.GREEN, null, null)));
         gp.add(niewegame, 0, 0);
         gp.add(loadgame,1,0);
+        gp.add(label,0,1);
         setTop(gp);
 
     }
