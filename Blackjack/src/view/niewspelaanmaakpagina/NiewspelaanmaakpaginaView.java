@@ -10,22 +10,30 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 
+
 public class NiewspelaanmaakpaginaView extends BorderPane {
     private TextField hoeveelspelers;
+    private Label vraag;
+    private Button confirm;
+
     public NiewspelaanmaakpaginaView() {
         initialiseNodes();
         layoutNodes();
     }
     private void initialiseNodes() {
-        hoeveelspelers = new TextField("met hoeveel wilt u spelen?");
-
+        hoeveelspelers = new TextField();
+        vraag = new Label("met hoeveel spelers wilt u spelen (max 5)");
+        confirm = new Button("confirm");
     }
     private void layoutNodes() {
         GridPane gp = new GridPane();
         gp.setBackground(new Background(new BackgroundFill(Color.DARKGREEN, null, null)));
-        gp.add(hoeveelspelers,0,0);
+        gp.add(hoeveelspelers,0,1);
+        gp.add(vraag,0,0);
+        gp.add(confirm,0,2);
         GridPane.setColumnSpan(hoeveelspelers, GridPane.REMAINING);
         setTop(gp);
     }
+
 }
 

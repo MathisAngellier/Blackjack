@@ -15,6 +15,7 @@ private Dealer dealer;
         pakKaarten.vulKaarten();
         pakKaarten.schudden();
 
+
         /*
         System.out.println(pakKaarten);
 

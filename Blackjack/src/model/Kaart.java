@@ -1,7 +1,6 @@
 package model;
 
 import javax.swing.text.html.ImageView;
-import java.awt.*;
 
 public class Kaart {
     private int waarde;
