@@ -1,13 +1,19 @@
 package model;
 
 
-import java.util.Scanner;
+import javafx.scene.control.Label;
 
 //TODO alle logica naar hier verplaatsen
 public class Spel {
 
 private Speler[] spelers;
 private Dealer dealer;
+private int aantalSpelers = 0;
+
+    public void setAantalSpelers() {
+        this.aantalSpelers = aantalSpelers;
+    }
+
     public Spel() {
         Speler[] spelers = new Speler[5];
         Dealer dealer = new Dealer();
@@ -64,6 +70,7 @@ private Dealer dealer;
 
 
     }
+
 }
 
 

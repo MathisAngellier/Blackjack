@@ -35,5 +35,12 @@ public class NiewspelaanmaakpaginaView extends BorderPane {
         setTop(gp);
     }
 
+    public Label getVraag() {
+        return vraag;
+    }
+
+    public Button getConfirm() {
+        return confirm;
+    }
 }
 
