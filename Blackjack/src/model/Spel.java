@@ -10,7 +10,7 @@ private Speler[] spelers;
 private Dealer dealer;
 private int aantalSpelers = 0;
 
-    public void setAantalSpelers() {
+    public void setAantalSpelers(int hoeveelheidspelers) {
         this.aantalSpelers = aantalSpelers;
     }
 

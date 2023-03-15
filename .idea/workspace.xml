@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="idk wa ik gedaan heb">
+    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="check todo in aanmaakpagina">
       <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" afterDir="false" />
@@ -110,7 +110,7 @@
       <workItem from="1678709387657" duration="343000" />
       <workItem from="1678715072022" duration="1002000" />
       <workItem from="1678787602810" duration="2071000" />
-      <workItem from="1678801801138" duration="2606000" />
+      <workItem from="1678801801138" duration="4021000" />
     </task>
     <task id="LOCAL-00001" summary="klasses in juiste packages gezet, we kunnen al beginnen aan de view package, maar de model package is nog wel niet af">
       <created>1676396593603</created>
@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678706224663</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="check todo in aanmaakpagina">
+      <created>1678805073286</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678805073286</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +251,7 @@
     <MESSAGE value="File manager aangemaakt, nog wel leeg, ga deze maken wanneer we daar zijn in de main, maar als ge wilt fix da dan al, zou handing zijn, of als gy main wilt maken dan fix ik dees wel als ge da nodig hebt" />
     <MESSAGE value="knop om van resultatenpagina naar startpagina te gaan" />
     <MESSAGE value="idk wa ik gedaan heb" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk wa ik gedaan heb" />
+    <MESSAGE value="check todo in aanmaakpagina" />
+    <option name="LAST_COMMIT_MESSAGE" value="check todo in aanmaakpagina" />
   </component>
 </project>

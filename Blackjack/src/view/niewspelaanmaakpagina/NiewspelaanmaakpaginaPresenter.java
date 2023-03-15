@@ -21,9 +21,8 @@ public class NiewspelaanmaakpaginaPresenter {
         view.getConfirm().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                // TODO: 14/03/2023  hier moet de output van vraag genomen worden en in aantalspeelers gezet worden
+                model.setAantalSpelers(Integer.parseInt(view.getHoeveelspelers().getText()));
             }
         });
     }
-
 }
