@@ -4,8 +4,13 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.stage.Stage;
 import model.Spel;
+import model.Speler;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class InzetpaginaPresenter {
     private Spel model;
@@ -17,6 +22,16 @@ public class InzetpaginaPresenter {
         this.stage = stage;
         this.addEventHandlers();
     }
+    public void setLabels() {
+        List<String> namen = new ArrayList<>();
+        List<Integer> geld = new ArrayList<>();
+        for (Speler speler : model.getSpelers()) {
+            namen.add(speler.getNaam());
+            geld.add(speler.getGeld());
+        }
+        view.setLabels(namen, geld);
+    }
+
     private void addEventHandlers() {
         view.getBevestigen().setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -32,7 +47,6 @@ public class InzetpaginaPresenter {
         });
     }
 
-    public Spel getModel() {
-        return model;
-    }
+
+
 }
