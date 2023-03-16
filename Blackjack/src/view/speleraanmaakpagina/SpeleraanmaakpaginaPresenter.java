@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import model.Spel;
 import model.Speler;
+import view.inzetpagina.InzetPaginaView;
+import view.inzetpagina.InzetpaginaPresenter;
 
 import java.util.ArrayList;
 
@@ -35,32 +37,16 @@ public class SpeleraanmaakpaginaPresenter {
                         spelers.add(speler);
                     }
                     System.out.println(spelers);
+                    InzetPaginaView inzetpaginaView = new InzetPaginaView();
+                    InzetpaginaPresenter inzetpaginaPresenter = new InzetpaginaPresenter(model, inzetpaginaView,stage);
+                    stage.setHeight(450);
+                    stage.setWidth(800);
+                    stage.setResizable(false);
+                    stage.setTitle("Blackjack");
 
-                   /* // Loop through the keys in the map using a for-each loop
-                    for (Label key : view.getMap().keySet()) {
-                        // Retrieve the value associated with the current key
-                        Object value = view.getMap().get(key);
-
-                        // Do something with the retrieved value
-                        if (value != null) {
-                            // Value was found in the map
-                            System.out.println("Value for " + key + ": " + value);
-                        } else {
-                            // Value was not found in the map
-                            System.out.println(key + " not found in map");
-                        }
-                    }
-                                    for (int i = 0; i < view.getHoeveelheid(); i++) {
-                    String spelerid = ("speler"+i);
-                    String naam = view.getMap().get(spelerid)[0].getText();
-                    System.out.println(naam);
-                    int geld = Integer.parseInt(view.getMap().get(spelerid)[1].getText());
-
-                    Speler speler = new Speler(naam, geld);
-                    spelers.add(speler);
-                }
-
-                    */
+                    //Om te kunnen switchen van mainView naar Applicatie
+                    view.getScene().setRoot(inzetpaginaView);
+                    inzetpaginaView.getScene().getWindow();
                 } catch (NumberFormatException e) {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("foutmelding");

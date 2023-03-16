@@ -13,6 +13,10 @@ private int aantalSpelers = 3;
         return aantalSpelers;
     }
 
+    public Speler[] getSpelers() {
+        return spelers;
+    }
+
     public void setAantalSpelers(int hoeveelheidspelers) {
         this.aantalSpelers = aantalSpelers;
     }

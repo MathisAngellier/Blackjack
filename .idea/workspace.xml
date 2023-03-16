@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="codewithme, button om naar aanmaakpagina te gaan gefixt">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" afterDir="false" />
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetPaginaView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaView.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,21 +33,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/projectfinaal&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/projectfinaal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Launcher" />
@@ -75,8 +73,16 @@
       <updated>1678985876823</updated>
       <workItem from="1678985878294" duration="8000" />
       <workItem from="1678987203274" duration="314000" />
-      <workItem from="1678991960168" duration="2542000" />
+      <workItem from="1678991960168" duration="7020000" />
     </task>
+    <task id="LOCAL-00001" summary="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek">
+      <created>1678994853748</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678994853748</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +90,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="codewithme, button om naar aanmaakpagina te gaan gefixt" />
-    <option name="LAST_COMMIT_MESSAGE" value="codewithme, button om naar aanmaakpagina te gaan gefixt" />
+    <MESSAGE value="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek" />
+    <option name="LAST_COMMIT_MESSAGE" value="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
