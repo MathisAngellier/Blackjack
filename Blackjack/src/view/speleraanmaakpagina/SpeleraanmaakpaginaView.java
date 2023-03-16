@@ -2,45 +2,55 @@ package view.speleraanmaakpagina;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 public class SpeleraanmaakpaginaView extends BorderPane {
-    private Label speler;
-    private int spelernummer = 1;
-    private Label naam;
-    private TextField naamfield;
-    private Label geld;
-    private TextField geldfield;
+    private HashMap<Label, TextField[]> map = new HashMap<>();
     private Button bevestigen;
+    private int hoeveelheid;
 
-    public SpeleraanmaakpaginaView() {
-        initialiseNodes();
+    public SpeleraanmaakpaginaView(int  hoeveelheid) {
+        this.hoeveelheid = hoeveelheid;
+        initialiseNodes(hoeveelheid);
         layoutNodes();
     }
-    private void initialiseNodes() {
-        speler = new Label("speler " + spelernummer);
-        naam = new Label("naam: ");
-        naamfield = new TextField();
-        geld = new Label("hoeveel geld heeft speler "+spelernummer +" in euro:");
-        geldfield = new TextField();
+    private void initialiseNodes(int hoeveelheid) {
         bevestigen = new Button("bevestigen");
     }
     private void layoutNodes() {
-        GridPane gp = new GridPane();
-        setBackground(new Background(new BackgroundImage(new Image("recourses/startpaginaAfbeeldingKlein.png"),null,null,null,null)));
-        gp.add(speler,0,0);
-        gp.add(naam,0,1);
-        gp.add(naamfield,1,1);
-        gp.add(geld,0,2);
-        gp.add(geldfield,1,2);
-        gp.add(bevestigen,0,3);
-        setTop(gp);
+        VBox fields = new VBox();
+        setCenter(fields);
+        setBackground(new Background(new BackgroundImage(new Image("resources/startpaginaAfbeeldingKlein.png"),null,null,null,null)));
+        for (int i = 1; i <= hoeveelheid; i++) {
+            Label label = new Label("Speler " + i);
+            TextField textField1 = new TextField();
+            TextField textField2 = new TextField();
+
+            TextField[] textFields = {textField1, textField2};
+            map.put(label, textFields);
+            fields.getChildren().addAll(label, textField1, textField2);
+            fields.getChildren().add(bevestigen);
+        }
     }
 
+    public HashMap<Label, TextField[]> getMap() {
+        return map;
+    }
 
+    public Button getBevestigen() {
+        return bevestigen;
+    }
+
+    public int getHoeveelheid() {
+        return hoeveelheid;
+    }
 }
 

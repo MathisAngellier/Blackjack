@@ -9,7 +9,7 @@ import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
 
 
-public class StartpaginaPresenter {
+public class  StartpaginaPresenter {
     private Spel model;
     private StartpaginaView view;
     private Stage stage;
@@ -29,7 +29,7 @@ public class StartpaginaPresenter {
 
                     //Om te kunnen switchen van mainView naar Applicatie
                     view.getScene().setRoot(niewspelaanmaakpaginaView);
-                    niewspelaanmaakpaginaView.getScene().getWindow().sizeToScene();
+                    niewspelaanmaakpaginaView.getScene().getWindow();
                 }
             });
         }

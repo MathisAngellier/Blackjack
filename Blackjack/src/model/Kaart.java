@@ -1,40 +1,24 @@
 package model;
 
+import javafx.scene.image.Image;
+
 public class Kaart {
     private int waarde;
     private String kleur;
     private String path;
+    private Image image;
 
 
-    public Kaart(int waarde, String kleur, String path) {
+    public Kaart(int waarde, String kleur, String path, Image img) {
         this.waarde = waarde;
         this.kleur = kleur;
         this.path = path;
-
-    }
-
-    public Kaart(int i, Symbool klaveren) {
-
+        this.image = img;
     }
 
     @Override
     public String toString() {
-        if (waarde > 10){
-            return prentNaam() +" "+ waarde+" ";
-        } else {
-            return kleur+" "+waarde+" ";
-        }
-    }
-
-    public String prentNaam(){
-        String naam = "";
-        switch (waarde){
-            case 1: naam = "Aas"; waarde = 10; break;
-            case 11: naam = "Boer"; waarde = 10; break;
-            case 12: naam = "Dame"; waarde = 10; break;
-            case 13: naam = "Koning"; waarde = 10; break;
-        }
-        return naam;
+        return "";
     }
 
     public int getWaarde() {
