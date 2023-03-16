@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="check todo in aanmaakpagina">
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
+    <list default="true" id="052e521f-7f86-48db-a776-f8cd0db37d2a" name="Changes" comment="spelers inlezen gefixt">
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +49,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/animatie&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/project/Blackjack/src/view/speleraanmaakpagina&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -56,6 +63,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alekd\OneDrive - Karel de Grote Hogeschool\school\22-23\OO Concepten\project\Blackjack\src\view\speleraanmaakpagina" />
       <recent name="C:\Users\alekd\OneDrive\Documenten\GitHub\Blackjack\Blackjack\src\recourses" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -110,7 +118,9 @@
       <workItem from="1678709387657" duration="343000" />
       <workItem from="1678715072022" duration="1002000" />
       <workItem from="1678787602810" duration="2071000" />
-      <workItem from="1678801801138" duration="4021000" />
+      <workItem from="1678801801138" duration="9221000" />
+      <workItem from="1678892268603" duration="894000" />
+      <workItem from="1678952482660" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="klasses in juiste packages gezet, we kunnen al beginnen aan de view package, maar de model package is nog wel niet af">
       <created>1676396593603</created>
@@ -217,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678805073286</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="spelers inlezen gefixt">
+      <created>1678866130396</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1678866130396</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +269,7 @@
     <MESSAGE value="knop om van resultatenpagina naar startpagina te gaan" />
     <MESSAGE value="idk wa ik gedaan heb" />
     <MESSAGE value="check todo in aanmaakpagina" />
-    <option name="LAST_COMMIT_MESSAGE" value="check todo in aanmaakpagina" />
+    <MESSAGE value="spelers inlezen gefixt" />
+    <option name="LAST_COMMIT_MESSAGE" value="spelers inlezen gefixt" />
   </component>
 </project>
