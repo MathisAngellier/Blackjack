@@ -2,9 +2,11 @@ package view.resultatenpagina;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.Spel;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
+import view.startpagina.StartpaginaPresenter;
 import view.startpagina.StartpaginaView;
 
 public class Resultatenpaginapresenter {

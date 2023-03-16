@@ -2,19 +2,21 @@ package view.startpagina;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.Spel;
+import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
 
 
 public class StartpaginaPresenter {
     private Spel model;
     private StartpaginaView view;
-    private Stage presenter;
-    public StartpaginaPresenter(Spel blackjack, StartpaginaView startpaginaView,Stage presenter) {
+    private Stage stage;
+    public StartpaginaPresenter(Spel blackjack, StartpaginaView startpaginaView, Stage stage) {
         this.model = blackjack;
         this.view = startpaginaView;
-        this.presenter = presenter;
+        this.stage = stage;
         this.addEventHandlers();
     }
     private void addEventHandlers() {
@@ -22,9 +24,8 @@ public class StartpaginaPresenter {
                 @Override
                 public void handle(ActionEvent actionEvent) {
                     NiewspelaanmaakpaginaView niewspelaanmaakpaginaView = new NiewspelaanmaakpaginaView();
-                    Stage stage = presenter;
-
-                    presenter.setTitle("Applicatie");
+                    NiewspelaanmaakpaginaPresenter niewspelaanmaakpaginaPresenter = new NiewspelaanmaakpaginaPresenter(model , niewspelaanmaakpaginaView, stage);
+                    stage.setTitle("Applicatie");
 
                     //Om te kunnen switchen van mainView naar Applicatie
                     view.getScene().setRoot(niewspelaanmaakpaginaView);

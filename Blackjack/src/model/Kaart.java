@@ -1,27 +1,20 @@
 package model;
 
-import javax.swing.text.html.ImageView;
-
 public class Kaart {
     private int waarde;
     private String kleur;
-    private ImageView imageView;
+    private String path;
 
-    public Kaart(int waarde, String kleur ) {
+
+    public Kaart(int waarde, String kleur, String path) {
         this.waarde = waarde;
         this.kleur = kleur;
+        this.path = path;
+
     }
 
     public Kaart(int i, Symbool klaveren) {
 
-    }
-
-    public ImageView getImageView() {
-        return imageView;
-    }
-
-    public void setImageView(ImageView imageView) {
-        this.imageView = imageView;
     }
 
     @Override
@@ -31,7 +24,6 @@ public class Kaart {
         } else {
             return kleur+" "+waarde+" ";
         }
-
     }
 
     public String prentNaam(){

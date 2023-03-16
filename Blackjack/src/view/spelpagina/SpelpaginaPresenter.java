@@ -16,5 +16,6 @@ public class SpelpaginaPresenter {
         this.addEventHandlers();
     }
     private void addEventHandlers() {
+
     }
 }
