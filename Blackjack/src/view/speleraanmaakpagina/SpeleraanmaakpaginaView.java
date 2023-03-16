@@ -41,5 +41,6 @@ public class SpeleraanmaakpaginaView extends BorderPane {
         setTop(gp);
     }
 
+
 }
 

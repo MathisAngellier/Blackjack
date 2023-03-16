@@ -17,7 +17,7 @@ public class PakKaarten {
         String[] kleuren = {"Schoppen","Harten","Ruiten","Klaveren"};
         for(int i = 1; i <= 13; i++) {
             for(int j = 0; j < kleuren.length; j++) {
-                kaarten.add(new Kaart(i, kleuren[j]));
+                //kaarten.add(new Kaart(i, kleuren[j]));
             }
         }
     }

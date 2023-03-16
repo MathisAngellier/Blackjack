@@ -4,22 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a56d1950-1119-49cd-acc8-664738337a62" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Kaart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Kaart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" afterDir="false" />
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="codewithme, button om naar aanmaakpagina te gaan gefixt">
+      <change afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/PakKaarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/PakKaarten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/PakKaarten.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/PakKaarten.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" afterDir="false" />
-    </list>
-    <list id="ce7833d0-1d34-45df-89c6-eb336e75d639" name="Changes by alekd" comment="">
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/Resultatenpaginapresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/Resultatenpaginapresenter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,15 +32,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="5" changelist="a56d1950-1119-49cd-acc8-664738337a62" />
-        <range start1="7" end1="7" start2="8" end2="9" changelist="a56d1950-1119-49cd-acc8-664738337a62" />
-        <range start1="24" end1="27" start2="26" end2="27" changelist="ce7833d0-1d34-45df-89c6-eb336e75d639" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -46,21 +40,11 @@
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Launcher" />
-      <module name="Blackjack" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Launcher" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="codewithme, button om naar aanmaakpagina te gaan gefixt" />
+    <option name="LAST_COMMIT_MESSAGE" value="codewithme, button om naar aanmaakpagina te gaan gefixt" />
   </component>
 </project>

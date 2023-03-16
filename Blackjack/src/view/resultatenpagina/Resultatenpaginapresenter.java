@@ -24,9 +24,7 @@ public class Resultatenpaginapresenter {
             @Override
             public void handle(ActionEvent actionEvent) {
                 StartpaginaView startpaginaView = new StartpaginaView();
-                Stage keuzePr = presenter;
-
-                presenter.setTitle("Applicatie");
+                Scene scene = new Scene(startpaginaView);
 
                 //Om te kunnen switchen van mainView naar Applicatie
                 view.getScene().setRoot(startpaginaView);

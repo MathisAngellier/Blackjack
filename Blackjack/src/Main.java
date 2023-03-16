@@ -17,6 +17,7 @@ public class Main extends Application {
         stage.setTitle("Blackjack");
         stage.setHeight(450);
         stage.setWidth(800);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }/*

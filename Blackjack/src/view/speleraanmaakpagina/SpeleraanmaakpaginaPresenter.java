@@ -18,7 +18,7 @@ public class SpeleraanmaakpaginaPresenter {
     }
     private void addEventHandlers() {
         for (int i = 0; i < model.getAantalSpelers(); i++) {
-
+            //view.
         }
     }
 
