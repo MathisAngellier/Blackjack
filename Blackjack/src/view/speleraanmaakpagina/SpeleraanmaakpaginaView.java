@@ -2,14 +2,11 @@ package view.speleraanmaakpagina;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 
 public class SpeleraanmaakpaginaView extends BorderPane {
@@ -26,8 +23,8 @@ public class SpeleraanmaakpaginaView extends BorderPane {
         bevestigen = new Button("bevestigen");
     }
     private void layoutNodes() {
-        VBox fields = new VBox();
-        setCenter(fields);
+        VBox v = new VBox();
+        setCenter(v);
         setBackground(new Background(new BackgroundImage(new Image("resources/startpaginaAfbeeldingKlein.png"),null,null,null,null)));
         for (int i = 1; i <= hoeveelheid; i++) {
             Label label = new Label("Speler " + i);
@@ -36,9 +33,9 @@ public class SpeleraanmaakpaginaView extends BorderPane {
 
             TextField[] textFields = {textField1, textField2};
             map.put(label, textFields);
-            fields.getChildren().addAll(label, textField1, textField2);
-            fields.getChildren().add(bevestigen);
+            v.getChildren().addAll(label, textField1, textField2);
         }
+        v.getChildren().add(bevestigen);
     }
 
     public HashMap<Label, TextField[]> getMap() {

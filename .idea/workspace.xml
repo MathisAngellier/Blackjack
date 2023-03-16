@@ -5,155 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="codewithme, button om naar aanmaakpagina te gaan gefixt">
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/ace_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/ace_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/ace_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/ace_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/jack_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/jack_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/jack_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/jack_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/king_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/king_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/king_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/king_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/queen__hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/queen_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/queen_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/queen_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Kaart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Kaart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/PakKaarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/PakKaarten.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/10_clubs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/2_clubs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/3_clubs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/4_clubs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/5_clubs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/6_clubs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/7_clubs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/8_clubs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/9_clubs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_J.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_K.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_club_Q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/10_diamonds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/2_diamonds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/3_diamonds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/4_diamonds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/5_diamonds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/6_diamonds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/7_diamonds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/8_diamonds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/9_diamonds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_J.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_K.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_diamond_Q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/10_hearts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/2_hearts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/3_hearts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/4_hearts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/5_hearts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/6_hearts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/7_hearts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/8_hearts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/9_hearts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_J.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_K.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_heart_Q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/10_spades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/2_spades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/3_spades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/4_spades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/5_spades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/6_spades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/7_spades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/8_spades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/pakKaarten/9_spades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_J.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_K.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/pakKaarten/Playing_card_spade_Q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/startpaginaAfbeelding.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/startpaginaAfbeelding.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/recourses/startpaginaAfbeeldingKlein.png" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/resources/startpaginaAfbeeldingKlein.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Kaart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Kaart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/PakKaarten.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/PakKaarten.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_J.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_K.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_club_Q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_J.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_K.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_diamond_Q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_J.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_K.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_heart_Q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_J.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_K.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/pakKaarten/Playing_card_spade_Q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/startpaginaAfbeelding.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/recourses/startpaginaAfbeeldingKlein.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" afterDir="false" />
-    </list>
-    <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="">
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/speleraanmaakpagina/SpeleraanmaakpaginaView.class" afterDir="false" />
     </list>
+    <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,18 +36,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/projectfinaal&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Launcher" />
@@ -208,6 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1678985876823</updated>
       <workItem from="1678985878294" duration="8000" />
+      <workItem from="1678987203274" duration="314000" />
+      <workItem from="1678991960168" duration="2542000" />
     </task>
     <servers />
   </component>

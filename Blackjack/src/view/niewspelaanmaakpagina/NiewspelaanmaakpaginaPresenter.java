@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import model.Spel;
+import view.speleraanmaakpagina.SpeleraanmaakpaginaPresenter;
 import view.speleraanmaakpagina.SpeleraanmaakpaginaView;
 
 public class NiewspelaanmaakpaginaPresenter {
@@ -25,9 +26,9 @@ public class NiewspelaanmaakpaginaPresenter {
                 @Override
                 public void handle(ActionEvent event) {
                     try {
-                        System.out.println(view.getHoeveelspelers().getText());
                         int hoeveelheid = (Integer.parseInt(view.getHoeveelspelers().getText()));
                         SpeleraanmaakpaginaView speleraanmaakpaginaView = new SpeleraanmaakpaginaView(hoeveelheid);
+                        SpeleraanmaakpaginaPresenter speleraanmaakpaginaPresenter = new SpeleraanmaakpaginaPresenter(model, speleraanmaakpaginaView,stage);
                         stage.setHeight(450);
                         stage.setWidth(800);
                         stage.setResizable(false);
@@ -38,10 +39,9 @@ public class NiewspelaanmaakpaginaPresenter {
                         speleraanmaakpaginaView.getScene().getWindow();
 
                     } catch (NumberFormatException e) {
-                        System.out.println("bb");
                         Alert alert = new Alert(Alert.AlertType.ERROR);
                         alert.setTitle("foutmelding");
-                        alert.setContentText("geef een geheel getal tussen 1 en 5.");
+                        alert.setContentText("geef een geheel getal.");
                         alert.showAndWait();
                     }
                 }
