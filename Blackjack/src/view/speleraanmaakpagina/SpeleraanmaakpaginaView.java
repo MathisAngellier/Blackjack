@@ -3,10 +3,8 @@ package view.speleraanmaakpagina;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 
 
@@ -33,7 +31,7 @@ public class SpeleraanmaakpaginaView extends BorderPane {
     }
     private void layoutNodes() {
         GridPane gp = new GridPane();
-        gp.setBackground(new Background(new BackgroundFill(Color.DARKGREEN, null, null)));
+        setBackground(new Background(new BackgroundImage(new Image("recourses/startpaginaAfbeeldingKlein.png"),null,null,null,null)));
         gp.add(speler,0,0);
         gp.add(naam,0,1);
         gp.add(naamfield,1,1);

@@ -8,7 +8,7 @@ import view.startpagina.StartpaginaPresenter;
 import view.startpagina.StartpaginaView;
 
 public class Main extends Application {
-   /* @Override
+    @Override
     public void start(Stage stage) throws Exception {
         Spel blackjack = new   Spel();
         StartpaginaView startpaginaView = new StartpaginaView();
@@ -19,7 +19,7 @@ public class Main extends Application {
         stage.setWidth(800);
         stage.setScene(scene);
         stage.show();
-    }*/
+    }/*
     @Override
     public void start(Stage stage) throws Exception {
         Spel blackjack = new   Spel();
@@ -31,7 +31,7 @@ public class Main extends Application {
         stage.setWidth(800);
         stage.setScene(scene);
         stage.show();
-    }
+    }*/
 
     public static void main(String[] args) {
         launch(args);

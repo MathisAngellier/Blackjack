@@ -16,18 +16,16 @@ public class StartpaginaView extends BorderPane {
         layoutNodes();
     }
     private void initialiseNodes() {
-        label = new Label("", new ImageView("recourses/startpaginaAfbeeldingKlein.png"));
         niewegame = new Button("niew");
         loadgame = new Button("load");
 
     }
     private void layoutNodes() {
         GridPane gp = new GridPane();
-        gp.setBackground(new Background(new BackgroundFill(Color.BLACK, null, null)));
+        //setBackground(new Background(new BackgroundFill(Color.BLACK, null, null)));
+        setBackground(new Background(new BackgroundImage(new Image("recourses/startpaginaAfbeeldingKlein.png"),null,null,null,null)));
         gp.add(niewegame, 0, 0);
         gp.add(loadgame,1,0);
-        gp.add(label,0,1);
-        GridPane.setColumnSpan(label, GridPane.REMAINING);
         setTop(gp);
 
     }
