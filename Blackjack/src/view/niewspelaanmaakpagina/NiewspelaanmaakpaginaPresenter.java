@@ -2,6 +2,7 @@ package view.niewspelaanmaakpagina;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import model.Spel;
@@ -22,12 +23,14 @@ public class NiewspelaanmaakpaginaPresenter {
         view.getBevestigen().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                model.setAantalSpelers(Integer.parseInt(view.getHoeveelspelers().getText()));
-            }
-        });
-        view.getBevestigen().setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
+                try {
+                    model.setAantalSpelers(Integer.parseInt(view.getHoeveelspelers().getText()));
+                }catch (NumberFormatException e) {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("foutmelding");
+                    alert.setContentText("geef een geheel getal tussen 1 en 5.");
+                    alert.showAndWait();
+                }
                 SpeleraanmaakpaginaView speleraanmaakpaginaView = new SpeleraanmaakpaginaView();
                 Stage stage = presenter;
 
@@ -36,6 +39,7 @@ public class NiewspelaanmaakpaginaPresenter {
                 //Om te kunnen switchen van mainView naar Applicatie
                 view.getScene().setRoot(speleraanmaakpaginaView);
                 speleraanmaakpaginaView.getScene().getWindow().sizeToScene();
+
             }
         });
     }

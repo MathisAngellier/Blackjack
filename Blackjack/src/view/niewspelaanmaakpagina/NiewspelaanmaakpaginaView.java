@@ -11,8 +11,8 @@ import javafx.scene.paint.Color;
 
 
 public class NiewspelaanmaakpaginaView extends BorderPane {
-    private Label vraagspelers;
-    private TextField hoeveelspelers;
+     private TextField hoeveelspelers;
+     private Label vraagspelers;
     private Button bevestigen;
 
     public NiewspelaanmaakpaginaView() {
