@@ -22,7 +22,7 @@ public class StartpaginaPresenter {
                 @Override
                 public void handle(ActionEvent actionEvent) {
                     NiewspelaanmaakpaginaView niewspelaanmaakpaginaView = new NiewspelaanmaakpaginaView();
-                    Stage keuzePr = presenter;
+                    Stage stage = presenter;
 
                     presenter.setTitle("Applicatie");
 

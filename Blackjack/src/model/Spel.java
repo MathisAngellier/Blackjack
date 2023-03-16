@@ -1,14 +1,17 @@
 package model;
 
 
-import javafx.scene.control.Label;
 
 //TODO alle logica naar hier verplaatsen
 public class Spel {
 
 private Speler[] spelers;
 private Dealer dealer;
-private int aantalSpelers = 0;
+private int aantalSpelers = 3;
+
+    public int getAantalSpelers() {
+        return aantalSpelers;
+    }
 
     public void setAantalSpelers(int hoeveelheidspelers) {
         this.aantalSpelers = aantalSpelers;
