@@ -2,6 +2,7 @@ package view.inzetpagina;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import model.Spel;
 import model.Speler;
@@ -27,6 +28,20 @@ public class InzetpaginaPresenter {
         view.getBevestigen().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+                try{
+                    int i =0;
+                    for (Speler speler : model.getSpelersArray()) {
+                        Speler spelervuller = model.spelersArray[i];
+
+                        System.out.println(model.spelersArray);
+                        i++;
+                    }
+                } catch (NumberFormatException e) {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("foutmelding");
+                    alert.setContentText("geef een geheel getal bij inzet.");
+                    alert.showAndWait();
+                }
                 NiewspelaanmaakpaginaView niewspelaanmaakpaginaView = new NiewspelaanmaakpaginaView();
                 NiewspelaanmaakpaginaPresenter niewspelaanmaakpaginaPresenter = new NiewspelaanmaakpaginaPresenter(model , niewspelaanmaakpaginaView, stage);
                 stage.setTitle("Applicatie");
