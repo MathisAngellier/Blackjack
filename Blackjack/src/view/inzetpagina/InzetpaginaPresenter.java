@@ -8,9 +8,6 @@ import model.Speler;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class InzetpaginaPresenter {
     private Spel model;
@@ -20,16 +17,8 @@ public class InzetpaginaPresenter {
         this.model = blackjack;
         this.view = inzetPaninaView;
         this.stage = stage;
+        showSpelers();
         this.addEventHandlers();
-    }
-    public void setLabels() {
-        List<String> namen = new ArrayList<>();
-        List<Integer> geld = new ArrayList<>();
-        for (Speler speler : model.getSpelers()) {
-            namen.add(speler.getNaam());
-            geld.add(speler.getGeld());
-        }
-        view.setLabels(namen, geld);
     }
 
     private void addEventHandlers() {
@@ -47,6 +36,12 @@ public class InzetpaginaPresenter {
         });
     }
 
-
-
+    private void showSpelers() {
+        Speler[] spelersArray = model.getSpelersArray();
+        for (int i = 0; i < spelersArray.length; i++) {
+            String naam = spelersArray[i].getNaam();
+            int geld = spelersArray[i].getGeld();
+            view.addToGrid(naam, geld, i);
+        }
+    }
 }

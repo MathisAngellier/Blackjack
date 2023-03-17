@@ -14,9 +14,14 @@ import java.util.ArrayList;
 
 public class SpeleraanmaakpaginaPresenter {
     private Spel model;
-    private ArrayList<Speler> spelers = new ArrayList<>();
+    private static ArrayList<Speler> spelers = new ArrayList<>();
     private SpeleraanmaakpaginaView view;
     private Stage stage;
+
+    public static ArrayList<Speler> getSpelers() {
+        return spelers;
+    }
+
     public SpeleraanmaakpaginaPresenter(Spel blackjack, SpeleraanmaakpaginaView speleraanmaakpaginaView, Stage stage) {
         this.model = blackjack;
         this.view = speleraanmaakpaginaView;
@@ -36,7 +41,6 @@ public class SpeleraanmaakpaginaPresenter {
                         Speler speler = new Speler(naam, geld);
                         spelers.add(speler);
                     }
-                    System.out.println(spelers);
                     InzetPaginaView inzetpaginaView = new InzetPaginaView();
                     InzetpaginaPresenter inzetpaginaPresenter = new InzetpaginaPresenter(model, inzetpaginaView,stage);
                     stage.setHeight(450);
