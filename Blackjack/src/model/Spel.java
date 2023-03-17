@@ -16,6 +16,9 @@ public class Spel {
         this.spelersArray = spelersArrayList.toArray(new Speler[0]);
     }
 
+    public ArrayList<Speler> getSpelers() {
+        return spelers;
+    }
 
     public Speler[] getSpelersArray() {
         return spelersArray;
@@ -32,7 +35,7 @@ private int aantalSpelers = 3;
     }
 
     public Spel() {
-        Speler[] spelers = new Speler[5];
+        this.spelersArray = spelersArray;
         Dealer dealer = new Dealer();
         PakKaarten pakKaarten = new PakKaarten();
         pakKaarten.vulKaarten();
