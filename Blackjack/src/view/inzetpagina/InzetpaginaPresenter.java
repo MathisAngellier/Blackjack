@@ -13,11 +13,13 @@ public class InzetpaginaPresenter {
     private Spel model;
     private InzetPaginaView view;
     private Stage stage;
+
+
+
     public InzetpaginaPresenter(Spel blackjack, InzetPaginaView inzetPaninaView, Stage stage) {
         this.model = blackjack;
         this.view = inzetPaninaView;
         this.stage = stage;
-        showSpelers();
         this.addEventHandlers();
     }
 
@@ -36,12 +38,4 @@ public class InzetpaginaPresenter {
         });
     }
 
-    private void showSpelers() {
-        Speler[] spelersArray = model.getSpelersArray();
-        for (int i = 0; i < spelersArray.length; i++) {
-            String naam = spelersArray[i].getNaam();
-            int geld = spelersArray[i].getGeld();
-            view.addToGrid(naam, geld, i);
-        }
-    }
 }
