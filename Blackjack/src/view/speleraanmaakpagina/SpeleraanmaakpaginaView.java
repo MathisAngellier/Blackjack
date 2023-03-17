@@ -46,8 +46,5 @@ public class SpeleraanmaakpaginaView extends BorderPane {
         return bevestigen;
     }
 
-    public int getHoeveelheid() {
-        return hoeveelheid;
-    }
 }
 

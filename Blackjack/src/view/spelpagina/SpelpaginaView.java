@@ -40,7 +40,7 @@ public class SpelpaginaView extends BorderPane {
     }
     private void layoutNodes() {
         GridPane gp = new GridPane();
-        setBackground(new Background(new BackgroundImage(new Image("resources/startpaginaAfbeeldingKlein.png"),null,null,null,null)));
+        setBackground(new Background(new BackgroundImage(new Image("resources/vecteezy_poker-table-green-cloth-on-dark-background-vector-illustration_6325236.jpg"),null,null,null,null)));
         gp.add(fold, 0, 0);
         gp.add(hit,1,0);
         gp.add(aantalGeld,3,0);

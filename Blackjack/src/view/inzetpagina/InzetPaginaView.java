@@ -43,9 +43,11 @@ public class InzetPaginaView extends BorderPane {
         gp.getChildren().clear();
         for (int i = 0; i < namen.size(); i++) {
             Label naamLabel = new Label(namen.get(i));
-            Label geldLabel = new Label(geld.get(i).toString());
+            Label geldLabel = new Label(Integer.toString(geld.get(i)));
             gp.add(naamLabel, 0, i+1);
             gp.add(geldLabel, 1, i+1);
+            System.out.println("test");
+            System.out.println(naamLabel);
         }
     }
 
