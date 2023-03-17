@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 
 
 public class NiewspelaanmaakpaginaView extends BorderPane {
@@ -28,6 +29,7 @@ public class NiewspelaanmaakpaginaView extends BorderPane {
         setBackground(new Background(new BackgroundImage(new Image("resources/startpaginaAfbeeldingKlein.png"),null,null,null,null)));
         gp.add(hoeveelspelers, 0, 1);
         gp.add(vraagspelers, 0, 0);
+        vraagspelers.setTextFill(Color.WHITE);
         gp.add(bevestigen, 0, 2);
         GridPane.setColumnSpan(hoeveelspelers, GridPane.REMAINING);
         setTop(gp);
