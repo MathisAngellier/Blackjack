@@ -1,17 +1,31 @@
 package model;
 
 
+import view.speleraanmaakpagina.SpeleraanmaakpaginaPresenter;
+
+import java.util.ArrayList;
 
 //TODO alle logica naar hier verplaatsen
 public class Spel {
+    ArrayList<Speler> spelers = SpeleraanmaakpaginaPresenter.getSpelers();
 
-private Speler[] spelers;
+
+    public Speler[] spelersArray = spelers.toArray(new Speler[0]);
+
+    public void setSpelersArrayList(ArrayList<Speler> spelersArrayList) {
+        this.spelersArray = spelersArrayList.toArray(new Speler[0]);
+    }
+
+
+    public Speler[] getSpelersArray() {
+        return spelersArray;
+    }
+
 private Dealer dealer;
 private int aantalSpelers = 3;
 
-    public Speler[] getSpelers() {
-        return spelers;
-    }
+
+
 
     public void setAantalSpelers(int hoeveelheidspelers) {
         this.aantalSpelers = aantalSpelers;

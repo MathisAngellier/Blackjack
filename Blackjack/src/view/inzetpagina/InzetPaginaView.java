@@ -1,5 +1,6 @@
 package view.inzetpagina;
 
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -19,15 +20,15 @@ public class InzetPaginaView extends BorderPane {
 
     public InzetPaginaView() {
         this.gp = new GridPane();
-
         initialiseNodes();
         layoutNodes();
     }
-    public GridPane getGp() {
-        return gp;
+    public void addToGrid(String naam, int geld, int rowIndex) {
+        Label nameLabel = new Label(naam);
+        Label geldLabel = new Label(Integer.toString(geld));
+        gp.add(nameLabel, 0, rowIndex);
+        gp.add(geldLabel, 1, rowIndex);
     }
-
-
 
     private void initialiseNodes() {
         bevestigen = new Button("bevestigen");
@@ -35,22 +36,9 @@ public class InzetPaginaView extends BorderPane {
 
     private void layoutNodes() {
         setBackground(new Background(new BackgroundImage(new Image("resources/startpaginaAfbeeldingKlein.png"),null,null,null,null)));
-        gp.add(bevestigen,0,2);
         setTop(gp);
 
     }
-    public void setLabels(List<String> namen, List<Integer> geld) {
-        gp.getChildren().clear();
-        for (int i = 0; i < namen.size(); i++) {
-            Label naamLabel = new Label(namen.get(i));
-            Label geldLabel = new Label(Integer.toString(geld.get(i)));
-            gp.add(naamLabel, 0, i+1);
-            gp.add(geldLabel, 1, i+1);
-            System.out.println("test");
-            System.out.println(naamLabel);
-        }
-    }
-
 
     public Button getBevestigen() {
         return bevestigen;
