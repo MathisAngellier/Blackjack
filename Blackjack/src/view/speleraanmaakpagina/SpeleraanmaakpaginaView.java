@@ -30,7 +30,6 @@ public class SpeleraanmaakpaginaView extends BorderPane {
             Label label = new Label("Speler " + i);
             TextField textField1 = new TextField();
             TextField textField2 = new TextField();
-
             TextField[] textFields = {textField1, textField2};
             map.put(label, textFields);
             v.getChildren().addAll(label, textField1, textField2);

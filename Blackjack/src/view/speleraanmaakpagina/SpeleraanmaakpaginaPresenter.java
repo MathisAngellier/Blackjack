@@ -35,7 +35,6 @@ public class SpeleraanmaakpaginaPresenter {
                 try{
                     for (Label key : view.getMap().keySet()) {
                         String naam = view.getMap().get(key)[0].getText();
-                        System.out.println(naam);
                         int geld = Integer.parseInt(view.getMap().get(key)[1].getText());
 
                         Speler speler = new Speler(naam, geld);
