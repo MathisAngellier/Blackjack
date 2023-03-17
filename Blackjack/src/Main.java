@@ -10,13 +10,14 @@ import view.startpagina.StartpaginaView;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Spel blackjack = new   Spel();
+        Spel blackjack = new Spel();
         StartpaginaView startpaginaView = new StartpaginaView();
         StartpaginaPresenter presenter = new StartpaginaPresenter(blackjack, startpaginaView,stage);
         Scene scene = new Scene(startpaginaView);
         stage.setTitle("Blackjack");
         stage.setHeight(450);
         stage.setWidth(800);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }/*

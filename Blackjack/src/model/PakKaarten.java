@@ -1,5 +1,7 @@
 package model;
 
+import javafx.scene.image.Image;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -13,11 +15,15 @@ public class PakKaarten {
         this.kaarten = new ArrayList<>();
     }
 
-    public void vulKaarten(){
-        String[] kleuren = {"Schoppen","Harten","Ruiten","Klaveren"};
-        for(int i = 1; i <= 13; i++) {
-            for(int j = 0; j < kleuren.length; j++) {
-                kaarten.add(new Kaart(i, kleuren[j]));
+    public void vulKaarten() {
+        String[] symbols = {"Spades", "Hearts", "Diamonds", "Clubs"};
+        int[] waarden = {11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
+        String[] namen = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+
+
+        for (int i = 0; i < symbols.length; i++) {
+            for (int j = 0; j < waarden.length; j++) {
+                kaarten.add(new Kaart(waarden[j],symbols[i],namen[j],new Image(String.format("file:resources/pakKaarten/%s_%s.png", namen[j].toLowerCase(), symbols[i].toLowerCase()),200,290.4,false,true)));
             }
         }
     }

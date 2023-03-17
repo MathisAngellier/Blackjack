@@ -2,9 +2,11 @@ package view.resultatenpagina;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.Spel;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
+import view.startpagina.StartpaginaPresenter;
 import view.startpagina.StartpaginaView;
 
 public class Resultatenpaginapresenter {
@@ -22,9 +24,7 @@ public class Resultatenpaginapresenter {
             @Override
             public void handle(ActionEvent actionEvent) {
                 StartpaginaView startpaginaView = new StartpaginaView();
-                Stage keuzePr = presenter;
-
-                presenter.setTitle("Applicatie");
+                Scene scene = new Scene(startpaginaView);
 
                 //Om te kunnen switchen van mainView naar Applicatie
                 view.getScene().setRoot(startpaginaView);

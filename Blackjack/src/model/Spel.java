@@ -9,8 +9,8 @@ private Speler[] spelers;
 private Dealer dealer;
 private int aantalSpelers = 3;
 
-    public int getAantalSpelers() {
-        return aantalSpelers;
+    public Speler[] getSpelers() {
+        return spelers;
     }
 
     public void setAantalSpelers(int hoeveelheidspelers) {

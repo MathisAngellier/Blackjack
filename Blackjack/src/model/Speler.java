@@ -75,4 +75,5 @@ public class Speler {
     public void setKapot(boolean kapot) {
         isKapot = kapot;
     }
+
 }
