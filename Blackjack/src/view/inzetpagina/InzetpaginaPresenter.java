@@ -2,12 +2,18 @@ package view.inzetpagina;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Node;
 import javafx.scene.control.Alert;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import model.Spel;
 import model.Speler;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
+
+import java.util.Arrays;
+import java.util.List;
 
 
 public class InzetpaginaPresenter {
@@ -19,6 +25,7 @@ public class InzetpaginaPresenter {
 
     public InzetpaginaPresenter(Spel blackjack, InzetPaginaView inzetPaninaView, Stage stage) {
         this.model = blackjack;
+        System.out.println(model);
         this.view = inzetPaninaView;
         this.stage = stage;
         this.addEventHandlers();
@@ -28,24 +35,11 @@ public class InzetpaginaPresenter {
         view.getBevestigen().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                try{
-                    int i =0;
-                    for (Speler speler : model.getSpelersArray()) {
-                        Speler spelervuller = model.spelersArray[i];
-
-                        System.out.println(model.spelersArray);
-                        i++;
-                    }
-                } catch (NumberFormatException e) {
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setTitle("foutmelding");
-                    alert.setContentText("geef een geheel getal bij inzet.");
-                    alert.showAndWait();
-                }
+                view.saveInzet();
+                System.out.println(Arrays.toString(model.spelersArray));
                 NiewspelaanmaakpaginaView niewspelaanmaakpaginaView = new NiewspelaanmaakpaginaView();
                 NiewspelaanmaakpaginaPresenter niewspelaanmaakpaginaPresenter = new NiewspelaanmaakpaginaPresenter(model , niewspelaanmaakpaginaView, stage);
                 stage.setTitle("Applicatie");
-
                 //Om te kunnen switchen van mainView naar Applicatie
                 view.getScene().setRoot(niewspelaanmaakpaginaView);
                 niewspelaanmaakpaginaView.getScene().getWindow();
