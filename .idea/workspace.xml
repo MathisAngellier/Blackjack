@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="leesbare text, nu is text wit">
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="sussy upload, ik heb nog steeds inzetpagina ni kunne fixe, wel een mooje achtergrnd for spelpagina gefxt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetPaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetPaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/speleraanmaakpagina/SpeleraanmaakpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaView.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +39,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/Blackjack2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/projectfinaal&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -74,8 +80,7 @@
       <workItem from="1678985878294" duration="8000" />
       <workItem from="1678987203274" duration="314000" />
       <workItem from="1678991960168" duration="16796000" />
-      <workItem from="1679041940118" duration="23583000" />
-      <workItem from="1679128805928" duration="1388000" />
+      <workItem from="1679041940118" duration="7739000" />
     </task>
     <task id="LOCAL-00001" summary="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek">
       <created>1678994853748</created>
@@ -98,53 +103,18 @@
       <option name="project" value="LOCAL" />
       <updated>1679044348345</updated>
     </task>
-    <task id="LOCAL-00004" summary="de labels worden nog steeds niet weergegeven maar de array is niet meer null">
-      <created>1679050053698</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679050053698</updated>
-    </task>
-    <task id="LOCAL-00005" summary="leesbare text, nu is text wit">
-      <created>1679072444070</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1679072444070</updated>
-    </task>
-    <task id="LOCAL-00006" summary="leesbare text, nu is text wit">
-      <created>1679072473268</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1679072473268</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="codewithme, button om naar aanmaakpagina te gaan gefixt" />
     <MESSAGE value="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek" />
     <MESSAGE value="im going borderline insane, fok deeees" />
     <MESSAGE value="sussy upload, ik heb nog steeds inzetpagina ni kunne fixe, wel een mooje achtergrnd for spelpagina gefxt" />
-    <MESSAGE value="labels zijn ijndelijk gefixt in inzet, ik ben echt insane geworden van dees kut ding. staatn wel allemaal op dezelfde plek atm" />
-    <MESSAGE value="de labels worden nog steeds niet weergegeven maar de array is niet meer null" />
-    <MESSAGE value="leesbare text, nu is text wit" />
-    <option name="LAST_COMMIT_MESSAGE" value="leesbare text, nu is text wit" />
+    <option name="LAST_COMMIT_MESSAGE" value="sussy upload, ik heb nog steeds inzetpagina ni kunne fixe, wel een mooje achtergrnd for spelpagina gefxt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
