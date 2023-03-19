@@ -19,17 +19,19 @@ public class SpelpaginaPresenter {
         this.presenter = presenter;
         this.addEventHandlers();
         view.getDealButton().setOnAction(event -> deelKaartenUit());
+        view.getHitButton().setOnAction(event -> hit());
+        view.getFoldButton().setOnAction(event -> stand());
     }
 
     private void deelKaartenUit(){
         model.deelKaartenUit(this);
     }
     private void hit (){
-        model.hit();
+        model.hit(this);
     }
 
     private void stand(){
-        model.stand();
+        model.stand(this);
     }
 
     public void updateView(){

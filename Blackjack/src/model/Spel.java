@@ -63,7 +63,7 @@ public class Spel {
         spelpaginaPresenter.updateView();
     }
 
-    public void hit(){
+    public void hit(SpelpaginaPresenter spelpaginaPresenter){
         for (int i = 0; i < spelers.size(); i++) {
             spelers.get(i).voegKaartToe(pakKaarten.volgendeKaart());
             spelpaginaPresenter.updateView();
@@ -73,7 +73,7 @@ public class Spel {
         }
     }
 
-    public void stand(){
+    public void stand(SpelpaginaPresenter spelpaginaPresenter){
         while (dealer.getTotaal() < 17) {
             dealer.voegKaartToe(pakKaarten.volgendeKaart());
         }

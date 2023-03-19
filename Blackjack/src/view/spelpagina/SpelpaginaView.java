@@ -15,6 +15,7 @@ import model.Kaart;
 import model.Speler;
 
 import java.util.List;
+import java.util.Objects;
 
 public class SpelpaginaView extends BorderPane {
 
@@ -67,7 +68,7 @@ public class SpelpaginaView extends BorderPane {
         VBox scoreBox = new VBox(10, playerScoreLabel, dealerScoreLabel);
         scoreBox.setAlignment(Pos.CENTER);
 
-        //setBackground(new Background(new BackgroundImage(new Image("resources/vecteezy_poker-table-green-cloth-on-dark-background-vector-illustration_6325236.jpg"),null,null,null,null)));
+        setBackground(new Background(new BackgroundImage(new Image("resources/vecteezy_poker-table-green-cloth-on-dark-background-vector-illustration_6325236.jpg"),null,null,null,null)));
 
         gamePane.setCenter(new HBox(10, spelerKaartenPane, dealerKaartenPane));
         gamePane.setBottom(buttonBox);
@@ -77,6 +78,18 @@ public class SpelpaginaView extends BorderPane {
 
     public void show() {
         this.getChildren().add(gamePane);
+    }
+
+    public void updatePlayerScore(int score) {
+        Platform.runLater(() -> {
+            playerScoreLabel.setText("Player Score: " + score);
+        });
+    }
+
+    public void updateDealerScore(int score) {
+        Platform.runLater(() -> {
+            dealerScoreLabel.setText("Dealer Score: " + score);
+        });
     }
 
     public void setLabel(String naam){
@@ -90,9 +103,11 @@ public class SpelpaginaView extends BorderPane {
             List<Kaart> spelerHand = speler.getHand().getKaarten();
             for (int i = 0; i < spelerHand.size(); i++) {
                 Kaart kaart = spelerHand.get(i);
-                Image image = kaart.getImage();
+                String kaartNaam = kaart.getKleur();
+                String kaartWaarde = String.valueOf(kaart.getWaarde());
+                Image image = new Image(String.format("resources/pakKaarten/%s_%s.png",kaartWaarde.toLowerCase(),kaartNaam.toLowerCase()),true);
                 ImageView imageView = new ImageView(image);
-                spelerKaartenPane.add(imageView, index, 0);
+                spelerKaartenPane.add(imageView, index, i);
             }
         });
     }
@@ -101,11 +116,14 @@ public class SpelpaginaView extends BorderPane {
         Platform.runLater(() -> {
             dealerKaartenPane.getChildren().clear();
             int index = 0;
-            for (Kaart kaart : dealer.getHand().getKaarten()) {
-                Image image = kaart.getImage();
+            List<Kaart> dealerHand = dealer.getHand().getKaarten();
+            for (int i = 0; i < dealerHand.size(); i++) {
+                Kaart kaart = dealerHand.get(i);
+                String kaartNaam = kaart.getKleur();
+                String kaartWaarde = String.valueOf(kaart.getWaarde());
+                Image image = new Image(String.format("resources/pakKaarten/%s_%s.png",kaartWaarde.toLowerCase(),kaartNaam.toLowerCase()),true);
                 ImageView imageView = new ImageView(image);
-                dealerKaartenPane.add(imageView, index, 0);
-                index++;
+                dealerKaartenPane.add(imageView, index, i);
             }
         });
     }
