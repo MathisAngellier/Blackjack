@@ -24,7 +24,11 @@ public class Spel {
         return spelersArray;
     }
 
-private Dealer dealer;
+    public void setSpelersArray(Speler[] spelersArray) {
+        this.spelersArray = spelersArray;
+    }
+
+    private Dealer dealer;
 private int aantalSpelers = 3;
 
 

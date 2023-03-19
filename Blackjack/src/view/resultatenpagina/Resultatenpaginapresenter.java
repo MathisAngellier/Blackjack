@@ -20,6 +20,7 @@ public class Resultatenpaginapresenter {
         this.addEventHandlers();
     }
     private void addEventHandlers() {
+
         view.getSave().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

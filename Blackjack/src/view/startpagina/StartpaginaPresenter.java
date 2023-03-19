@@ -5,10 +5,12 @@ import javafx.event.EventHandler;
 import javafx.stage.Stage;
 import model.ReaderWriter;
 import model.Spel;
+import model.Speler;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
 
 import java.io.IOException;
+import java.util.List;
 
 
 public class  StartpaginaPresenter {
@@ -34,10 +36,16 @@ public class  StartpaginaPresenter {
                     niewspelaanmaakpaginaView.getScene().getWindow();
                 }
             });
-            view.getLoadgame().setOnAction(new EventHandler<ActionEvent>() {
+        view.getLoadgame().setOnAction(e -> {
+            Speler[] spelersArray = ReaderWriter.loadSpelersArray();
+            model.setSpelersArray(spelersArray);
+        });
+
+        view.getLoadgame().setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
                     try {
+
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }
