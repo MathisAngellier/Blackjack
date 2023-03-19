@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 
 public class Spel {
+
     ArrayList<Speler> spelers = SpeleraanmaakpaginaPresenter.getSpelers();
 
     public Speler[] spelersArray = spelers.toArray(new Speler[0]);
@@ -81,7 +82,7 @@ public class Spel {
         }
         spelpaginaPresenter.updateView();
         for (int i = 0; i < spelers.size(); i++) {
-            if (dealer.getTotaal() > 21 || spelers.get(i).getTotaal() > dealer.getTotaal()) {
+            if (speler.getTotaal() > 21 || spelers.get(i).getTotaal() > dealer.getTotaal()) {
                 eindeSpel(true);
             } else {
                 eindeSpel(false);

@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import model.Dealer;
 import model.Kaart;
@@ -62,6 +63,8 @@ public class SpelpaginaView extends BorderPane {
         dealerKaartenPane.setVgap(10);
         playerScoreLabel.setAlignment(Pos.CENTER);
         dealerScoreLabel.setAlignment(Pos.CENTER);
+        playerScoreLabel.setTextFill(Color.WHITE);
+        // TODO: 19/03/2023 dealerscoreLabel moet weg wanneer alles werkt
 
         HBox buttonBox = new HBox(10, deal, hit, fold);
         buttonBox.setAlignment(Pos.CENTER);
