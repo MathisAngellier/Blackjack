@@ -6,6 +6,8 @@ import javafx.stage.Stage;
 import model.ReaderWriter;
 import model.Spel;
 import model.Speler;
+import view.inzetpagina.InzetPaginaView;
+import view.inzetpagina.InzetpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
 
@@ -16,6 +18,7 @@ import java.util.List;
 public class  StartpaginaPresenter {
     private Spel model;
     private StartpaginaView view;
+    private ReaderWriter readerWriter;
     private Stage stage;
     public StartpaginaPresenter(Spel blackjack, StartpaginaView startpaginaView, Stage stage) {
         this.model = blackjack;
@@ -34,6 +37,20 @@ public class  StartpaginaPresenter {
                     //Om te kunnen switchen van mainView naar Applicatie
                     view.getScene().setRoot(niewspelaanmaakpaginaView);
                     niewspelaanmaakpaginaView.getScene().getWindow();
+                }
+            });
+            view.getLoadgame().setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    readerWriter.loadSpelers();
+
+                    InzetPaginaView inzetPaginaView = new InzetPaginaView();
+                    InzetpaginaPresenter inzetpaginaPresenter = new InzetpaginaPresenter(model , inzetPaginaView, stage);
+                    stage.setTitle("Applicatie");
+
+                    //Om te kunnen switchen van mainView naar Applicatie
+                    view.getScene().setRoot(inzetPaginaView);
+                    inzetPaginaView.getScene().getWindow();
                 }
             });
 

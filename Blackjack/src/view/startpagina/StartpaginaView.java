@@ -16,7 +16,6 @@ public class StartpaginaView extends BorderPane {
     private void initialiseNodes() {
         niewegame = new Button("niew");
         loadgame = new Button("load");
-
     }
     private void layoutNodes() {
         GridPane gp = new GridPane();

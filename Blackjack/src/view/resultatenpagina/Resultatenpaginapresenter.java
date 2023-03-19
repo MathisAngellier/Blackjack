@@ -12,7 +12,7 @@ public class Resultatenpaginapresenter {
     private Spel model;
     private ResultatenpaginaView view;
     private Stage stage;
-    private ReaderWriter writer;
+    private ReaderWriter readerWriter;
     public Resultatenpaginapresenter(Spel blackjack, ResultatenpaginaView resultatenpaginaView, Stage stage) {
         this.model = blackjack;
         this.view = resultatenpaginaView;
@@ -24,7 +24,7 @@ public class Resultatenpaginapresenter {
         view.getSave().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                writer.saveSpelersArray((model.getSpelersArray()));
+                readerWriter.saveSpelers();
             }
         });
         view.getTerugnaarstart().setOnAction(new EventHandler<ActionEvent>() {
