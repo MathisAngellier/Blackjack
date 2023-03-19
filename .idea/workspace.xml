@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="opslaan en read werkt">
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="laatste versie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/ReaderWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/ReaderWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/spelersArray.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/spelers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/spelersArray.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Speler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Speler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Hand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Hand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Speler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Speler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,12 +51,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/projectfinaal&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mathis/Desktop/Blackjack&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
@@ -96,6 +99,7 @@
       <workItem from="1678991960168" duration="16796000" />
       <workItem from="1679041940118" duration="7739000" />
       <workItem from="1679218739419" duration="1213000" />
+      <workItem from="1679231038599" duration="13122000" />
     </task>
     <task id="LOCAL-00001" summary="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek">
       <created>1678994853748</created>
@@ -132,14 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679184541544</updated>
     </task>
-    <task id="LOCAL-00006" summary="opslaan en read werkt">
-      <created>1679240477445</created>
+    <task id="LOCAL-00006" summary="parameter1 is null error">
+      <created>1679235369110</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1679240477445</updated>
+      <updated>1679235369110</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="laatste versie">
+      <created>1679246576771</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679246576771</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,8 +174,9 @@
     <MESSAGE value="sussy upload, ik heb nog steeds inzetpagina ni kunne fixe, wel een mooje achtergrnd for spelpagina gefxt" />
     <MESSAGE value="inzet added to speler" />
     <MESSAGE value="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea" />
-    <MESSAGE value="opslaan en read werkt" />
-    <option name="LAST_COMMIT_MESSAGE" value="opslaan en read werkt" />
+    <MESSAGE value="parameter1 is null error" />
+    <MESSAGE value="laatste versie" />
+    <option name="LAST_COMMIT_MESSAGE" value="laatste versie" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -54,23 +54,23 @@ public class SpelpaginaView extends BorderPane {
 
     }
     private void layoutNodes() {
-//        spelerKaartenPane.setPadding(new Insets(10));
-//        spelerKaartenPane.setHgap(5);
-//        spelerKaartenPane.setVgap(10);
-//        dealerKaartenPane.setPadding(new Insets(10));
-//        dealerKaartenPane.setHgap(5);
-//        dealerKaartenPane.setVgap(10);
+        spelerKaartenPane.setPadding(new Insets(10));
+        spelerKaartenPane.setHgap(5);
+        spelerKaartenPane.setVgap(10);
+        dealerKaartenPane.setPadding(new Insets(10));
+        dealerKaartenPane.setHgap(5);
+        dealerKaartenPane.setVgap(10);
         playerScoreLabel.setAlignment(Pos.CENTER);
         dealerScoreLabel.setAlignment(Pos.CENTER);
 
         HBox buttonBox = new HBox(10, deal, hit, fold);
         buttonBox.setAlignment(Pos.CENTER);
-        VBox scoreBox = new VBox(10, playerScoreLabel, dealerScoreLabel);
+        VBox scoreBox = new VBox(10,  dealerScoreLabel,playerScoreLabel);
         scoreBox.setAlignment(Pos.CENTER);
 
         setBackground(new Background(new BackgroundImage(new Image("resources/vecteezy_poker-table-green-cloth-on-dark-background-vector-illustration_6325236.jpg"),null,null,null,null)));
 
-        gamePane.setCenter(new HBox(10, spelerKaartenPane, dealerKaartenPane));
+        gamePane.setCenter(new VBox(10,  dealerKaartenPane,spelerKaartenPane));
         gamePane.setBottom(buttonBox);
         gamePane.setTop(scoreBox);
 
@@ -107,7 +107,8 @@ public class SpelpaginaView extends BorderPane {
                 String kaartWaarde = String.valueOf(kaart.getWaarde());
                 Image image = new Image(String.format("resources/pakKaarten/%s_%s.png",kaartWaarde.toLowerCase(),kaartNaam.toLowerCase()),true);
                 ImageView imageView = new ImageView(image);
-                spelerKaartenPane.add(imageView, index, i);
+                spelerKaartenPane.add(imageView, index, 0);
+                index++;
             }
         });
     }
@@ -123,7 +124,8 @@ public class SpelpaginaView extends BorderPane {
                 String kaartWaarde = String.valueOf(kaart.getWaarde());
                 Image image = new Image(String.format("resources/pakKaarten/%s_%s.png",kaartWaarde.toLowerCase(),kaartNaam.toLowerCase()),true);
                 ImageView imageView = new ImageView(image);
-                dealerKaartenPane.add(imageView, index, i);
+                dealerKaartenPane.add(imageView, index, 0);
+                index++;
             }
         });
     }

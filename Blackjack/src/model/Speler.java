@@ -28,6 +28,10 @@ public class Speler {
         return hand.getWaarde();
     }
 
+    public int setTotaal(){
+        return 0;
+    }
+
     public void voegKaartToe(Kaart kaart){
         hand.voegKaartToe(kaart);
     }
@@ -74,6 +78,11 @@ public class Speler {
 
     public void setKapot(boolean kapot) {
         isKapot = kapot;
+    }
+
+    public void verwijderHand() {
+        hand.verwijderHand();
+
     }
 
 }

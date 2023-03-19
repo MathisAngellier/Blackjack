@@ -22,15 +22,22 @@ public class Hand {
 
     @Override
     public String toString() {
+        for (int i = 0; i < kaarten.size(); i++) {
+            kaarten.get(i);
+        }
         return "Hand{" +
-                "kaarten=" + kaarten +
+                "kaarten=" +
+
+                kaarten +
                 ", waarde=" + waarde +
                 ", aantalKaarten=" + aantalKaarten +
                 '}';
     }
 
     public void verwijderHand(){
+        kaarten.clear();
         aantalKaarten = 0;
+
     }
 
     public int getAantalKaarten() {

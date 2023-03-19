@@ -48,8 +48,10 @@ public class Spel {
     public void deelKaartenUit(SpelpaginaPresenter spelpaginaPresenter){
         for (int i = 0; i < spelers.size(); i++) {
             System.out.println(spelers.get(i));
-            //spelers[i].verwijderHand();
+            spelers.get(i).verwijderHand();
+            spelers.get(i).setTotaal();
         }
+
         dealer.verwijderHand();
         pakKaarten.vulKaarten();
         pakKaarten.schudden();
@@ -58,7 +60,7 @@ public class Spel {
             for (int j = 0; j < spelers.size(); j++) {
                 spelers.get(j).voegKaartToe(pakKaarten.volgendeKaart());
             }
-            //dealer.voegKaartToe(pakKaarten.volgendeKaart());
+            dealer.voegKaartToe(pakKaarten.volgendeKaart());
         }
         spelpaginaPresenter.updateView();
     }
