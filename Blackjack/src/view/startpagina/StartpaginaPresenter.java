@@ -36,21 +36,7 @@ public class  StartpaginaPresenter {
                     niewspelaanmaakpaginaView.getScene().getWindow();
                 }
             });
-        view.getLoadgame().setOnAction(e -> {
-            Speler[] spelersArray = ReaderWriter.loadSpelersArray();
-            model.setSpelersArray(spelersArray);
-        });
 
-        view.getLoadgame().setOnAction(new EventHandler<ActionEvent>() {
-                @Override
-                public void handle(ActionEvent event) {
-                    try {
-
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                }
-            });
         }
 
 }

@@ -2,10 +2,12 @@ package model;
 
 
 import view.speleraanmaakpagina.SpeleraanmaakpaginaPresenter;
+import view.spelpagina.SpelpaginaPresenter;
+import view.spelpagina.SpelpaginaView;
 
 import java.util.ArrayList;
 
-//TODO alle logica naar hier verplaatsen
+
 public class Spel {
     ArrayList<Speler> spelers = SpeleraanmaakpaginaPresenter.getSpelers();
 
@@ -29,8 +31,11 @@ public class Spel {
     }
 
     private Dealer dealer;
-private int aantalSpelers = 3;
-
+    private int aantalSpelers = 3;
+    private Speler speler;
+    private PakKaarten pakKaarten;
+    private SpelpaginaView spelpaginaView;
+    private SpelpaginaPresenter spelpaginaPresenter;
 
 
 
@@ -46,53 +51,69 @@ private int aantalSpelers = 3;
         pakKaarten.schudden();
 
 
-        /*
-        System.out.println(pakKaarten);
 
-        System.out.println("Welkom bij het spel BLACKJACK");
-        int aantalSpelers = 0;
-        do {
-            //System.out.print("Met hoeveel spelers wil je spelen tot 5? ");
-            //aantalSpelers = input.nextInt();
-        } while (aantalSpelers <= 0 || aantalSpelers > 5);
 
-        //Spelers initialiseren
+
+    }
+
+    public void deelKaartenUit(){
         for (int i = 0; i < aantalSpelers; i++) {
-            //System.out.print("Wat is de naam van speler" + (i + 1) + "? ");
-
-            //String naam = input.next();
-            //System.out.print("Hoeveel geld heeft de speler" + (i + 1) + "? ");
-            //int geld = input.nextInt();
-            //spelers[i] = new Speler(naam, geld);
+            System.out.println(spelers.get(i));
+            //spelers[i].verwijderHand();
         }
-
-        //elke speler die nog geld heeft krijgt een prompt om geld in te zetten
-        //er wordt ook gekeken of de inzet niet
-        for (int i = 0; i < aantalSpelers; i++) {
-            if (spelers[i].getGeld() > 0) {
-                //te veranderen
-                int inzet=0;
-                do {
-                    //System.out.print("Hoeveel wil je inzetten " + spelers[i].getNaam() + ", je hebt nog " + spelers[i].getGeld() + ": ");
-                    //inzet = input.nextInt();
-                    //spelers[i].setInzet(inzet);
-                } while (inzet <= 0 || inzet > spelers[i].getGeld());
-            }
-        }
-
+        dealer.verwijderHand();
+        pakKaarten.vulKaarten();
+        pakKaarten.schudden();
         //elke speler die nog geld heeft krijgt 2 kaarten in zijn hand + de dealer krijgt ook zijn 2 kaarten
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < aantalSpelers; j++) {
-                if (spelers[j].getGeld() > 0) {
-                    spelers[j].voegKaartToe(pakKaarten.volgendeKaart());
-                }
+                spelers.get(j).voegKaartToe(pakKaarten.volgendeKaart());
             }
             dealer.voegKaartToe(pakKaarten.volgendeKaart());
         }
+        spelpaginaPresenter.updateView();
+    }
 
-         */
+    public void hit(){
+        for (int i = 0; i < aantalSpelers; i++) {
+            spelers.get(i).voegKaartToe(pakKaarten.volgendeKaart());
+            spelpaginaPresenter.updateView();
+            if (spelers.get(i).getTotaal() > 21){
+                eindeSpel(false);
+            }
+        }
+    }
 
+    public void stand(){
+        while (dealer.getTotaal() < 17) {
+            dealer.voegKaartToe(pakKaarten.volgendeKaart());
+        }
+        spelpaginaPresenter.updateView();
+        for (int i = 0; i < aantalSpelers; i++) {
+            if (dealer.getTotaal() > 21 || spelers.get(i).getTotaal() > dealer.getTotaal()) {
+                eindeSpel(true);
+            } else {
+                eindeSpel(false);
+            }
+        }
 
+    }
+
+    public void eindeSpel(boolean winnaar){
+        String resultaat;
+        if (winnaar){
+            resultaat = "speler wint";
+        } else {
+            resultaat = "dealer wint";
+        }
+    }
+
+    public Dealer getDealer() {
+        return dealer;
+    }
+
+    public PakKaarten getPakKaarten() {
+        return pakKaarten;
     }
 
 }

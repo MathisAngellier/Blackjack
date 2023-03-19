@@ -36,4 +36,8 @@ public class Kaart {
     public void setKleur(String kleur) {
         this.kleur = kleur;
     }
+
+    public Image getImage() {
+        return image;
+    }
 }

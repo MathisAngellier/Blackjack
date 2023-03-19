@@ -7,7 +7,7 @@ public class Hand {
     private int aantalKaarten = 0;
 
     public Hand(){
-
+        aantalKaarten =0;
     }
 
     public void voegKaartToe(Kaart kaart){
@@ -40,5 +40,9 @@ public class Hand {
                 handTekst.append(kaart);
         }
         return handTekst.toString();
+    }
+
+    public int getAantalKaarten() {
+        return aantalKaarten;
     }
 }
