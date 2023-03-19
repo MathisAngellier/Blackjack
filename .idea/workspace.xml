@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="opslaan en read werkt">
-      <change afterPath="$PROJECT_DIR$/Blackjack/src/resources/achterkand kaart.png" afterDir="false" />
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="meest nutteloze commit ooit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
     </list>
@@ -61,8 +59,8 @@
       <recent name="model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\alekd\OneDrive - Karel de Grote Hogeschool\school\22-23\OO Concepten\projectfinaal\Blackjack\src\model" />
       <recent name="C:\Users\alekd\OneDrive - Karel de Grote Hogeschool\school\22-23\OO Concepten\projectfinaal\Blackjack\src\resources" />
+      <recent name="C:\Users\alekd\OneDrive - Karel de Grote Hogeschool\school\22-23\OO Concepten\projectfinaal\Blackjack\src\model" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679240477445</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="meest nutteloze commit ooit">
+      <created>1679261611755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679261611755</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +165,8 @@
     <MESSAGE value="inzet added to speler" />
     <MESSAGE value="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea" />
     <MESSAGE value="opslaan en read werkt" />
-    <option name="LAST_COMMIT_MESSAGE" value="opslaan en read werkt" />
+    <MESSAGE value="meest nutteloze commit ooit" />
+    <option name="LAST_COMMIT_MESSAGE" value="meest nutteloze commit ooit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

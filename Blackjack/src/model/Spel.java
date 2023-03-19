@@ -8,10 +8,18 @@ import java.util.ArrayList;
 
 
 public class Spel {
+    private Dealer dealer;
+    private int aantalSpelers = 3;
+    private Speler speler;
+    private PakKaarten pakKaarten;
+    private SpelpaginaView spelpaginaView;
+    private SpelpaginaPresenter spelpaginaPresenter;
 
     ArrayList<Speler> spelers = SpeleraanmaakpaginaPresenter.getSpelers();
 
     public Speler[] spelersArray = spelers.toArray(new Speler[0]);
+
+
 
     public void setSpelersArrayList(ArrayList<Speler> spelersArrayList) {
         this.spelersArray = spelersArrayList.toArray(new Speler[0]);
@@ -28,13 +36,6 @@ public class Spel {
     public void setSpelersArray(Speler[] spelersArray) {
         this.spelersArray = spelersArray;
     }
-
-    private Dealer dealer;
-    private int aantalSpelers = 3;
-    private Speler speler;
-    private PakKaarten pakKaarten;
-    private SpelpaginaView spelpaginaView;
-    private SpelpaginaPresenter spelpaginaPresenter;
 
     public void setAantalSpelers(int hoeveelheidspelers) {
         this.aantalSpelers = aantalSpelers;
