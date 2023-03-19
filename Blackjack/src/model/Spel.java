@@ -4,13 +4,11 @@ package model;
 import view.speleraanmaakpagina.SpeleraanmaakpaginaPresenter;
 import view.spelpagina.SpelpaginaPresenter;
 import view.spelpagina.SpelpaginaView;
-
 import java.util.ArrayList;
 
 
 public class Spel {
     ArrayList<Speler> spelers = SpeleraanmaakpaginaPresenter.getSpelers();
-
 
     public Speler[] spelersArray = spelers.toArray(new Speler[0]);
 
@@ -37,27 +35,18 @@ public class Spel {
     private SpelpaginaView spelpaginaView;
     private SpelpaginaPresenter spelpaginaPresenter;
 
-
-
     public void setAantalSpelers(int hoeveelheidspelers) {
         this.aantalSpelers = aantalSpelers;
     }
 
     public Spel() {
         this.spelersArray = spelersArray;
-        Dealer dealer = new Dealer();
-        PakKaarten pakKaarten = new PakKaarten();
-        pakKaarten.vulKaarten();
-        pakKaarten.schudden();
-
-
-
-
-
+        dealer = new Dealer();
+        pakKaarten = new PakKaarten();
     }
 
-    public void deelKaartenUit(){
-        for (int i = 0; i < aantalSpelers; i++) {
+    public void deelKaartenUit(SpelpaginaPresenter spelpaginaPresenter){
+        for (int i = 0; i < spelers.size(); i++) {
             System.out.println(spelers.get(i));
             //spelers[i].verwijderHand();
         }
@@ -66,16 +55,16 @@ public class Spel {
         pakKaarten.schudden();
         //elke speler die nog geld heeft krijgt 2 kaarten in zijn hand + de dealer krijgt ook zijn 2 kaarten
         for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < aantalSpelers; j++) {
+            for (int j = 0; j < spelers.size(); j++) {
                 spelers.get(j).voegKaartToe(pakKaarten.volgendeKaart());
             }
-            dealer.voegKaartToe(pakKaarten.volgendeKaart());
+            //dealer.voegKaartToe(pakKaarten.volgendeKaart());
         }
         spelpaginaPresenter.updateView();
     }
 
     public void hit(){
-        for (int i = 0; i < aantalSpelers; i++) {
+        for (int i = 0; i < spelers.size(); i++) {
             spelers.get(i).voegKaartToe(pakKaarten.volgendeKaart());
             spelpaginaPresenter.updateView();
             if (spelers.get(i).getTotaal() > 21){
@@ -89,7 +78,7 @@ public class Spel {
             dealer.voegKaartToe(pakKaarten.volgendeKaart());
         }
         spelpaginaPresenter.updateView();
-        for (int i = 0; i < aantalSpelers; i++) {
+        for (int i = 0; i < spelers.size(); i++) {
             if (dealer.getTotaal() > 21 || spelers.get(i).getTotaal() > dealer.getTotaal()) {
                 eindeSpel(true);
             } else {

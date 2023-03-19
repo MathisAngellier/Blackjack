@@ -22,7 +22,7 @@ public class SpelpaginaPresenter {
     }
 
     private void deelKaartenUit(){
-        model.deelKaartenUit();
+        model.deelKaartenUit(this);
     }
     private void hit (){
         model.hit();

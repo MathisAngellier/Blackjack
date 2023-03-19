@@ -25,7 +25,7 @@ public class Speler {
                 '}';
     }
     public int getTotaal(){
-        return hand.berekenTotaal();
+        return hand.getWaarde();
     }
 
     public void voegKaartToe(Kaart kaart){

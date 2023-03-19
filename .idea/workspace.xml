@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_15_29__Changes_.xml" afterDir="false" />
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="parameter1 is null error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Dealer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Kaart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Kaart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/ReaderWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/ReaderWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Speler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Speler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Hand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Hand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Kaart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Kaart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +98,7 @@
       <workItem from="1678991960168" duration="16796000" />
       <workItem from="1679041940118" duration="7739000" />
       <workItem from="1679218739419" duration="1213000" />
-      <workItem from="1679231038599" duration="4223000" />
+      <workItem from="1679231038599" duration="11451000" />
     </task>
     <task id="LOCAL-00001" summary="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek">
       <created>1678994853748</created>
@@ -139,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679184541544</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="parameter1 is null error">
+      <created>1679235369110</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679235369110</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +166,8 @@
     <MESSAGE value="sussy upload, ik heb nog steeds inzetpagina ni kunne fixe, wel een mooje achtergrnd for spelpagina gefxt" />
     <MESSAGE value="inzet added to speler" />
     <MESSAGE value="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea" />
-    <option name="LAST_COMMIT_MESSAGE" value="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea" />
+    <MESSAGE value="parameter1 is null error" />
+    <option name="LAST_COMMIT_MESSAGE" value="parameter1 is null error" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -19,12 +19,8 @@ public class Dealer {
         hand.verwijderHand();
     }
 
-    public int eersteKaart(){
-        return hand.dealerEersteKaart();
-    }
-
     public int getTotaal(){
-        return hand.berekenTotaal();
+        return hand.getWaarde();
     }
 
     @Override
@@ -32,5 +28,9 @@ public class Dealer {
         return "model.Dealer{" +
                 "hand=" + hand +
                 '}';
+    }
+
+    public Hand getHand() {
+        return hand;
     }
 }

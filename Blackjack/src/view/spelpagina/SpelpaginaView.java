@@ -1,16 +1,20 @@
 package view.spelpagina;
 
 import javafx.application.Platform;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundImage;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+import model.Dealer;
 import model.Kaart;
 import model.Speler;
+
+import java.util.List;
 
 public class SpelpaginaView extends BorderPane {
 
@@ -21,29 +25,58 @@ public class SpelpaginaView extends BorderPane {
     private Label naamSpeler;
     private Label dealer;
     private Speler speler;
-    private Kaart kaart;
+
     private ImageView spelerKaarten;
     private ImageView dealerKaarten;
     private GridPane spelerKaartenPane;
+    private BorderPane gamePane;
+    private GridPane dealerKaartenPane;
+    private Label playerScoreLabel;
+    private Label dealerScoreLabel;
 
 
     public SpelpaginaView() {
-        layoutNodes();
         initialiseNodes();
+        layoutNodes();
+        show();
     }
 
     private void initialiseNodes() {
+        gamePane = new BorderPane();
+        spelerKaartenPane = new GridPane();
+        dealerKaartenPane = new GridPane();
+        playerScoreLabel = new Label();
+        dealerScoreLabel = new Label();
         fold = new Button("Fold");
         hit = new Button("Hit");
         deal = new Button("Deal");
+
     }
     private void layoutNodes() {
-        GridPane gp = new GridPane();
-        spelerKaartenPane = new GridPane();
-        //setBottom(spelerKaartenPane);
-        setBackground(new Background(new BackgroundImage(new Image("resources/vecteezy_poker-table-green-cloth-on-dark-background-vector-illustration_6325236.jpg"),null,null,null,null)));
-        gp.add(deal,0,0);
-        setTop(gp);
+//        spelerKaartenPane.setPadding(new Insets(10));
+//        spelerKaartenPane.setHgap(5);
+//        spelerKaartenPane.setVgap(10);
+//        dealerKaartenPane.setPadding(new Insets(10));
+//        dealerKaartenPane.setHgap(5);
+//        dealerKaartenPane.setVgap(10);
+        playerScoreLabel.setAlignment(Pos.CENTER);
+        dealerScoreLabel.setAlignment(Pos.CENTER);
+
+        HBox buttonBox = new HBox(10, deal, hit, fold);
+        buttonBox.setAlignment(Pos.CENTER);
+        VBox scoreBox = new VBox(10, playerScoreLabel, dealerScoreLabel);
+        scoreBox.setAlignment(Pos.CENTER);
+
+        //setBackground(new Background(new BackgroundImage(new Image("resources/vecteezy_poker-table-green-cloth-on-dark-background-vector-illustration_6325236.jpg"),null,null,null,null)));
+
+        gamePane.setCenter(new HBox(10, spelerKaartenPane, dealerKaartenPane));
+        gamePane.setBottom(buttonBox);
+        gamePane.setTop(scoreBox);
+
+    }
+
+    public void show() {
+        this.getChildren().add(gamePane);
     }
 
     public void setLabel(String naam){
@@ -54,10 +87,25 @@ public class SpelpaginaView extends BorderPane {
         Platform.runLater(() -> {
             spelerKaartenPane.getChildren().clear();
             int index = 0;
-            for (int i = 0; i < speler.getHand().getAantalKaarten(); i++) {
+            List<Kaart> spelerHand = speler.getHand().getKaarten();
+            for (int i = 0; i < spelerHand.size(); i++) {
+                Kaart kaart = spelerHand.get(i);
                 Image image = kaart.getImage();
                 ImageView imageView = new ImageView(image);
                 spelerKaartenPane.add(imageView, index, 0);
+            }
+        });
+    }
+
+    public void updateDealerCards(Dealer dealer) {
+        Platform.runLater(() -> {
+            dealerKaartenPane.getChildren().clear();
+            int index = 0;
+            for (Kaart kaart : dealer.getHand().getKaarten()) {
+                Image image = kaart.getImage();
+                ImageView imageView = new ImageView(image);
+                dealerKaartenPane.add(imageView, index, 0);
+                index++;
             }
         });
     }

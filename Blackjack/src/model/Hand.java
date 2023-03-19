@@ -1,48 +1,47 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Hand {
 
-    //ik weet niet hoeveel kaarten er in een hand kunnen zijn dus ik heb gewoon 10 gepakt
-    private Kaart[] hand = new Kaart[10];
+    private List<Kaart> kaarten;
+    private int waarde;
     private int aantalKaarten = 0;
 
     public Hand(){
-        aantalKaarten =0;
+        kaarten = new ArrayList<>();
+        waarde = 0;
     }
 
     public void voegKaartToe(Kaart kaart){
-        hand[aantalKaarten++] = kaart;
+        kaarten.add(kaart);
+        waarde += kaart.getWaarde();
+
+    }
+
+    @Override
+    public String toString() {
+        return "Hand{" +
+                "kaarten=" + kaarten +
+                ", waarde=" + waarde +
+                ", aantalKaarten=" + aantalKaarten +
+                '}';
     }
 
     public void verwijderHand(){
         aantalKaarten = 0;
     }
 
-    public int berekenTotaal(){
-        int totaal = 0;
-        for (int i = 0; i < aantalKaarten; i++) {
-            totaal += hand[i].getWaarde();
-        }
-        return totaal;
-    }
-
-    public int dealerEersteKaart(){
-        int waardeKaart = hand[0].getWaarde();
-        return waardeKaart;
-    }
-
-
-    @Override
-    public String toString() {
-        StringBuilder handTekst= new StringBuilder();
-        for (Kaart kaart : hand) {
-            if (kaart != null)
-                handTekst.append(kaart);
-        }
-        return handTekst.toString();
-    }
-
     public int getAantalKaarten() {
         return aantalKaarten;
+    }
+
+    public int getWaarde() {
+        return waarde;
+    }
+
+    public List<Kaart> getKaarten() {
+        return kaarten;
     }
 }
