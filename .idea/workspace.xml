@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="inzet added to speler">
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea">
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/model/ReaderWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blackjack/src/model/spelersArray.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/inzetpagina/InzetpaginaPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/BlackjackFileManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/inzetpagina/InzetpaginaView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/niewspelaanmaakpagina/NiewspelaanmaakpaginaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/BlackjackFileManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/Resultatenpaginapresenter$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
@@ -23,6 +23,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +63,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="model" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alekd\OneDrive - Karel de Grote Hogeschool\school\22-23\OO Concepten\projectfinaal\Blackjack\src\model" />
       <recent name="C:\Users\alekd\OneDrive - Karel de Grote Hogeschool\school\22-23\OO Concepten\projectfinaal\Blackjack\src\resources" />
     </key>
   </component>
@@ -115,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679177171469</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea">
+      <created>1679184541544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679184541544</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +156,8 @@
     <MESSAGE value="im going borderline insane, fok deeees" />
     <MESSAGE value="sussy upload, ik heb nog steeds inzetpagina ni kunne fixe, wel een mooje achtergrnd for spelpagina gefxt" />
     <MESSAGE value="inzet added to speler" />
-    <option name="LAST_COMMIT_MESSAGE" value="inzet added to speler" />
+    <MESSAGE value="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea" />
+    <option name="LAST_COMMIT_MESSAGE" value="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

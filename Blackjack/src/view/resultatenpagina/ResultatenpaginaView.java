@@ -66,4 +66,9 @@ public class ResultatenpaginaView extends BorderPane {
     public Button getTerugnaarstart() {
         return terugnaarstart;
     }
+
+    public Button getSave() {
+        return save;
+    }
+
 }

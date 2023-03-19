@@ -2,11 +2,13 @@ package view.startpagina;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.ReaderWriter;
 import model.Spel;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
+
+import java.io.IOException;
 
 
 public class  StartpaginaPresenter {
@@ -30,6 +32,15 @@ public class  StartpaginaPresenter {
                     //Om te kunnen switchen van mainView naar Applicatie
                     view.getScene().setRoot(niewspelaanmaakpaginaView);
                     niewspelaanmaakpaginaView.getScene().getWindow();
+                }
+            });
+            view.getLoadgame().setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    try {
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                 }
             });
         }
