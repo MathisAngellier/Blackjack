@@ -17,6 +17,7 @@ public class Resultatenpaginapresenter {
         this.model = blackjack;
         this.view = resultatenpaginaView;
         this.stage = stage;
+        this.readerWriter = new ReaderWriter(model);
         this.addEventHandlers();
     }
     private void addEventHandlers() {

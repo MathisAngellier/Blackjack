@@ -24,6 +24,7 @@ public class  StartpaginaPresenter {
         this.model = blackjack;
         this.view = startpaginaView;
         this.stage = stage;
+        this.readerWriter = new ReaderWriter(model);
         this.addEventHandlers();
     }
     private void addEventHandlers() {

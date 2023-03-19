@@ -41,7 +41,7 @@ public class ReaderWriter {
 }
 
 /*public class ReaderWriter {
-    private String fileName = "spelersArray.txt";
+    private String fileName = "spelers.txt";
 
     public void saveSpelersArray(Speler[] spelersArray) {
         try {
@@ -80,7 +80,7 @@ public class ReaderWriter {
         return spelersList.toArray(new Speler[0]);
     }
 }
-    private static final String FILENAME = "model/spelersArray.txt" ;
+    private static final String FILENAME = "model/spelers.txt" ;
 
     public static void writeToFile(List<Speler> spelersArray) throws IOException {
         File file = new File(FILENAME);

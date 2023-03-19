@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="opslaan en read">
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="opslaan en read werkt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/model/ReaderWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/ReaderWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/spelersArray.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/spelers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/startpagina/StartpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Hand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Hand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Kaart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Kaart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/SpelersArrayWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/spelersArray.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/startpagina/StartpaginaView.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679184541544</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="opslaan en read werkt">
+      <created>1679240477445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679240477445</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,19 +163,8 @@
     <MESSAGE value="sussy upload, ik heb nog steeds inzetpagina ni kunne fixe, wel een mooje achtergrnd for spelpagina gefxt" />
     <MESSAGE value="inzet added to speler" />
     <MESSAGE value="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea" />
-    <option name="LAST_COMMIT_MESSAGE" value="going to work to save the spelersArray in a different file upon pressen the button save, and read it using loea" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java</url>
-          <line>14</line>
-          <properties field="readerWriter" class="view.resultatenpagina.Resultatenpaginapresenter" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="opslaan en read werkt" />
+    <option name="LAST_COMMIT_MESSAGE" value="opslaan en read werkt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
