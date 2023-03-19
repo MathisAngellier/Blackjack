@@ -35,6 +35,7 @@ public class NiewspelaanmaakpaginaView extends BorderPane {
         setTop(gp);
     }
 
+
     public TextField getHoeveelspelers() {
         return hoeveelspelers;
     }

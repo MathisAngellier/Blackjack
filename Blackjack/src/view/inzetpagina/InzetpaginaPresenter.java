@@ -11,6 +11,8 @@ import model.Spel;
 import model.Speler;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
+import view.spelpagina.SpelpaginaPresenter;
+import view.spelpagina.SpelpaginaView;
 
 import java.util.Arrays;
 import java.util.List;
@@ -36,13 +38,15 @@ public class InzetpaginaPresenter {
             @Override
             public void handle(ActionEvent actionEvent) {
                 view.saveInzet();
+
                 System.out.println(Arrays.toString(model.spelersArray));
-                NiewspelaanmaakpaginaView niewspelaanmaakpaginaView = new NiewspelaanmaakpaginaView();
-                NiewspelaanmaakpaginaPresenter niewspelaanmaakpaginaPresenter = new NiewspelaanmaakpaginaPresenter(model , niewspelaanmaakpaginaView, stage);
-                stage.setTitle("Applicatie");
+
+                SpelpaginaView spelpaginaView = new SpelpaginaView();
+                SpelpaginaPresenter spelpaginaPresenter = new SpelpaginaPresenter(model , spelpaginaView, stage);
+                stage.setTitle("Blackjack");
                 //Om te kunnen switchen van mainView naar Applicatie
-                view.getScene().setRoot(niewspelaanmaakpaginaView);
-                niewspelaanmaakpaginaView.getScene().getWindow();
+                view.getScene().setRoot(spelpaginaView);
+                spelpaginaView.getScene().getWindow();
             }
         });
     }

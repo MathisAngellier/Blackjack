@@ -5,22 +5,20 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.Spel;
-import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
-import view.startpagina.StartpaginaPresenter;
 import view.startpagina.StartpaginaView;
 
 public class Resultatenpaginapresenter {
     private Spel model;
-    private StartpaginaView view;
-    private Stage presenter;
-    public Resultatenpaginapresenter(Spel blackjack, StartpaginaView startpaginaView, Stage presenter) {
+    private ResultatenpaginaView view;
+    private Stage stage;
+    public Resultatenpaginapresenter(Spel blackjack, ResultatenpaginaView resultatenpaginaView, Stage stage) {
         this.model = blackjack;
-        this.view = startpaginaView;
-        this.presenter = presenter;
+        this.view = resultatenpaginaView;
+        this.stage = stage;
         this.addEventHandlers();
     }
     private void addEventHandlers() {
-        view.getNiewegame().setOnAction(new EventHandler<ActionEvent>() {
+        view.getTerugnaarstart().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 StartpaginaView startpaginaView = new StartpaginaView();
