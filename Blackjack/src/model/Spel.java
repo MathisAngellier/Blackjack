@@ -5,6 +5,7 @@ import view.speleraanmaakpagina.SpeleraanmaakpaginaPresenter;
 import view.spelpagina.SpelpaginaPresenter;
 import view.spelpagina.SpelpaginaView;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Spel {
@@ -56,9 +57,10 @@ public class Spel {
 
         dealer.verwijderHand();
         dealer.getHand().setWaarde(0);
+
         pakKaarten.vulKaarten();
         pakKaarten.schudden();
-        //elke speler die nog geld heeft krijgt 2 kaarten in zijn hand + de dealer krijgt ook zijn 2 kaarten
+
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < spelers.size(); j++) {
                 spelers.get(j).voegKaartToe(pakKaarten.volgendeKaart());
@@ -67,6 +69,9 @@ public class Spel {
             spelpaginaPresenter.updateView();
         }
 
+        pakKaarten.vulKaarten();
+        System.out.println(pakKaarten);
+        spelpaginaPresenter.updateView();
     }
 
     public void hit(SpelpaginaPresenter spelpaginaPresenter){
@@ -92,7 +97,6 @@ public class Spel {
                 eindeSpel(false);
             }
         }
-
     }
 
     public void eindeSpel(boolean winnaar){
