@@ -71,6 +71,8 @@ public class Spel {
 
         pakKaarten.vulKaarten();
         System.out.println(pakKaarten);
+        System.out.println("dealer = " + dealer.getTotaal());
+        System.out.println("speler = " + spelers.get(0).getTotaal());
         spelpaginaPresenter.updateView();
     }
 
@@ -80,6 +82,7 @@ public class Spel {
 
             if (spelers.get(i).getTotaal() > 21){
                 eindeSpel(false);
+                System.out.println("speler verliest");
             }
             spelpaginaPresenter.updateView();
         }

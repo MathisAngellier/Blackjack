@@ -5,14 +5,14 @@ import javafx.scene.image.Image;
 public class Kaart {
     private int waarde;
     private String kleur;
-    private String path;
+    private String naam;
     private Image image;
 
 
-    public Kaart(int waarde, String kleur, String path, Image img) {
+    public Kaart(int waarde, String kleur, String naam, Image img) {
         this.waarde = waarde;
         this.kleur = kleur;
-        this.path = path;
+        this.naam = naam;
         this.image = img;
     }
 
@@ -39,5 +39,9 @@ public class Kaart {
 
     public Image getImage() {
         return image;
+    }
+
+    public String getNaam() {
+        return naam;
     }
 }
