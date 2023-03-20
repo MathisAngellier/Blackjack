@@ -70,9 +70,7 @@ public class SpelpaginaView extends BorderPane {
         buttonBox.setAlignment(Pos.CENTER);
         VBox scoreBox = new VBox(10,  dealerScoreLabel,playerScoreLabel);
         scoreBox.setAlignment(Pos.CENTER);
-
-        setBackground(new Background(new BackgroundImage(new Image("resources/vecteezy_poker-table-green-cloth-on-dark-background-vector-illustration_6325236.jpg"),null,null,null,null)));
-
+        setBackground(new Background(new BackgroundFill(Color.DARKGREEN, CornerRadii.EMPTY, Insets.EMPTY)));
         gamePane.setCenter(new VBox(10,  dealerKaartenPane,spelerKaartenPane));
         gamePane.setBottom(buttonBox);
         gamePane.setTop(scoreBox);
