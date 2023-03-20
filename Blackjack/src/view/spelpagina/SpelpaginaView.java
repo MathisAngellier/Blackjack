@@ -122,7 +122,7 @@ public class SpelpaginaView extends BorderPane {
             for (int i = 0; i < dealerHand.size(); i++) {
                 Kaart kaart = dealerHand.get(i);
                 String kaartNaam = kaart.getKleur();
-                String kaartWaarde = String.valueOf(kaart.getWaarde());
+                String kaartWaarde = kaart.getNaam();
                 Image image = new Image(String.format("resources/pakKaarten/%s_%s.png",kaartWaarde.toLowerCase(),kaartNaam.toLowerCase()),true);
                 ImageView imageView = new ImageView(image);
                 dealerKaartenPane.add(imageView, index, 0);
