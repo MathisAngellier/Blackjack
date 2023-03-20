@@ -6,9 +6,11 @@ import model.Kaart;
 public class Dealer {
 
     private Hand hand;
+    private int totaal;
 
     public Dealer(){
         this.hand = new Hand();
+        this.totaal = totaal;
     }
 
     public void voegKaartToe(Kaart kaart){
@@ -21,6 +23,10 @@ public class Dealer {
 
     public int getTotaal(){
         return hand.getWaarde();
+    }
+
+    public void setTotaal(int totaal) {
+        this.totaal = totaal;
     }
 
     @Override

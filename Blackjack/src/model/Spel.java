@@ -51,10 +51,11 @@ public class Spel {
         for (int i = 0; i < spelers.size(); i++) {
             System.out.println(spelers.get(i));
             spelers.get(i).verwijderHand();
-            spelers.get(i).setTotaal();
+            spelers.get(i).getHand().setWaarde(0);
         }
 
         dealer.verwijderHand();
+        dealer.getHand().setWaarde(0);
         pakKaarten.vulKaarten();
         pakKaarten.schudden();
         //elke speler die nog geld heeft krijgt 2 kaarten in zijn hand + de dealer krijgt ook zijn 2 kaarten
@@ -63,17 +64,19 @@ public class Spel {
                 spelers.get(j).voegKaartToe(pakKaarten.volgendeKaart());
             }
             dealer.voegKaartToe(pakKaarten.volgendeKaart());
+            spelpaginaPresenter.updateView();
         }
-        spelpaginaPresenter.updateView();
+
     }
 
     public void hit(SpelpaginaPresenter spelpaginaPresenter){
         for (int i = 0; i < spelers.size(); i++) {
             spelers.get(i).voegKaartToe(pakKaarten.volgendeKaart());
-            spelpaginaPresenter.updateView();
+
             if (spelers.get(i).getTotaal() > 21){
                 eindeSpel(false);
             }
+            spelpaginaPresenter.updateView();
         }
     }
 
@@ -83,7 +86,7 @@ public class Spel {
         }
         spelpaginaPresenter.updateView();
         for (int i = 0; i < spelers.size(); i++) {
-            if (speler.getTotaal() > 21 || spelers.get(i).getTotaal() > dealer.getTotaal()) {
+            if (spelers.get(i).getTotaal() > 21 || spelers.get(i).getTotaal() > dealer.getTotaal()) {
                 eindeSpel(true);
             } else {
                 eindeSpel(false);

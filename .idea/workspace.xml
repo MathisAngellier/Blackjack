@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="meest nutteloze commit ooit">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_03_2023_18_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_03_2023_18_59__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Dealer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Speler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Speler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +94,7 @@
       <workItem from="1678991960168" duration="16796000" />
       <workItem from="1679041940118" duration="7739000" />
       <workItem from="1679218739419" duration="1213000" />
+      <workItem from="1679308030031" duration="1073000" />
     </task>
     <task id="LOCAL-00001" summary="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek">
       <created>1678994853748</created>

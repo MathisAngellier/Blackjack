@@ -48,6 +48,10 @@ public class Hand {
         return waarde;
     }
 
+    public void setWaarde(int waarde) {
+        this.waarde = waarde;
+    }
+
     public List<Kaart> getKaarten() {
         return kaarten;
     }

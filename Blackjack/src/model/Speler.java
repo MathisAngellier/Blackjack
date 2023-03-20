@@ -6,12 +6,14 @@ public class Speler {
     private int inzet;
     private boolean isKapot; //als de speler meer dan 21 heeft
     private Hand hand;
+    private int totaal;
 
     public Speler(String naam, int geld) {
         this.naam = naam;
         this.geld = geld;
         this.isKapot = false;
         this.hand = new Hand();
+        this.totaal = totaal;
     }
 
     @Override
@@ -28,8 +30,8 @@ public class Speler {
         return hand.getWaarde();
     }
 
-    public int setTotaal(){
-        return 0;
+    public void setTotaal(int totaal) {
+        this.totaal = totaal;
     }
 
     public void voegKaartToe(Kaart kaart){

@@ -44,7 +44,7 @@ public class SpelpaginaPresenter {
         Dealer dealer = model.getDealer();
 
         for (int i = 0; i < model.getSpelers().size(); i++) {
-            view.setLabel(speler.get(i).getNaam());
+            //view.setLabel(speler.get(i).getNaam());
             view.updatePlayerCards(speler.get(i));
             view.updateDealerCards(dealer);
             view.updatePlayerScore(speler.get(i).getTotaal());
