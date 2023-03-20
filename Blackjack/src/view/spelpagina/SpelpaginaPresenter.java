@@ -25,7 +25,7 @@ public class SpelpaginaPresenter {
         this.addEventHandlers();
         view.getDealButton().setOnAction(event -> deelKaartenUit());
         view.getHitButton().setOnAction(event -> hit());
-        view.getFoldButton().setOnAction(event -> stand());
+        view.getStandButton().setOnAction(event -> stand());
     }
 
     private void deelKaartenUit(){

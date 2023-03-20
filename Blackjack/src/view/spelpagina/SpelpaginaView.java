@@ -3,25 +3,22 @@ package view.spelpagina;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
-import javafx.stage.Stage;
 import model.Dealer;
 import model.Kaart;
 import model.Speler;
 
 import java.util.List;
-import java.util.Objects;
 
 public class SpelpaginaView extends BorderPane {
 
     private Button hit;
-    private Button fold;
+    private Button stand;
     private Button deal;
     private Label aantalGeld;
     private Label naamSpeler;
@@ -49,7 +46,7 @@ public class SpelpaginaView extends BorderPane {
         dealerKaartenPane = new GridPane();
         playerScoreLabel = new Label();
         dealerScoreLabel = new Label();
-        fold = new Button("Fold");
+        stand = new Button("Stand");
         hit = new Button("Hit");
         deal = new Button("Deal");
 
@@ -66,7 +63,7 @@ public class SpelpaginaView extends BorderPane {
         playerScoreLabel.setTextFill(Color.WHITE);
         // TODO: 19/03/2023 dealerscoreLabel moet weg wanneer alles werkt
 
-        HBox buttonBox = new HBox(10, deal, hit, fold);
+        HBox buttonBox = new HBox(10, deal, hit, stand);
         buttonBox.setAlignment(Pos.CENTER);
         VBox scoreBox = new VBox(10,  dealerScoreLabel,playerScoreLabel);
         scoreBox.setAlignment(Pos.CENTER);
@@ -91,10 +88,6 @@ public class SpelpaginaView extends BorderPane {
         Platform.runLater(() -> {
             dealerScoreLabel.setText("Dealer Score: " + score);
         });
-    }
-
-    public void setLabel(String naam){
-        naamSpeler = new Label(naam);
     }
 
     public void updatePlayerCards(Speler speler) {
@@ -135,8 +128,8 @@ public class SpelpaginaView extends BorderPane {
         return hit;
     }
 
-    public Button getFoldButton() {
-        return fold;
+    public Button getStandButton() {
+        return stand;
     }
 
     public Button getDealButton() {

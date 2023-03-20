@@ -54,7 +54,6 @@ public class Spel {
             spelers.get(i).verwijderHand();
             spelers.get(i).getHand().setWaarde(0);
         }
-
         dealer.verwijderHand();
         dealer.getHand().setWaarde(0);
 
@@ -65,24 +64,23 @@ public class Spel {
             for (int j = 0; j < spelers.size(); j++) {
                 spelers.get(j).voegKaartToe(pakKaarten.volgendeKaart());
             }
-            dealer.voegKaartToe(pakKaarten.volgendeKaart());
-            spelpaginaPresenter.updateView();
-        }
 
-        pakKaarten.vulKaarten();
+        }
+        dealer.voegKaartToe(pakKaarten.volgendeKaart());
+        spelpaginaPresenter.updateView();
         System.out.println(pakKaarten);
         System.out.println("dealer = " + dealer.getTotaal());
         System.out.println("speler = " + spelers.get(0).getTotaal());
-        spelpaginaPresenter.updateView();
+        //spelpaginaPresenter.updateView();
     }
 
     public void hit(SpelpaginaPresenter spelpaginaPresenter){
+
         for (int i = 0; i < spelers.size(); i++) {
             spelers.get(i).voegKaartToe(pakKaarten.volgendeKaart());
 
             if (spelers.get(i).getTotaal() > 21){
                 eindeSpel(false);
-                System.out.println("speler verliest");
             }
             spelpaginaPresenter.updateView();
         }
@@ -92,22 +90,36 @@ public class Spel {
         while (dealer.getTotaal() < 17) {
             dealer.voegKaartToe(pakKaarten.volgendeKaart());
         }
-        spelpaginaPresenter.updateView();
+
         for (int i = 0; i < spelers.size(); i++) {
-            if (spelers.get(i).getTotaal() > 21 || spelers.get(i).getTotaal() > dealer.getTotaal()) {
+            if (dealer.getTotaal() > 21){
+                eindeSpel(false);
+                System.out.println("dealer kapot");
+            } else if (dealer.getTotaal() > spelers.get(i).getTotaal() && dealer.getTotaal() < 22){
+                eindeSpel(false);
+            } else if (spelers.get(i).getTotaal() > dealer.getTotaal()){
                 eindeSpel(true);
             } else {
                 eindeSpel(false);
+                System.out.println("gelijke waarde dus dealer wint");
             }
         }
+        spelpaginaPresenter.updateView();
+
+    }
+
+    public void berekenScore(){
+
     }
 
     public void eindeSpel(boolean winnaar){
         String resultaat;
         if (winnaar){
             resultaat = "speler wint";
+            System.out.println("speler wint");
         } else {
             resultaat = "dealer wint";
+            System.out.println("dealer wint");
         }
     }
 
