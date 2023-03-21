@@ -1,7 +1,10 @@
 package view.spelpagina;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Node;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import model.Dealer;
 import model.Spel;
@@ -23,9 +26,16 @@ public class SpelpaginaPresenter {
         this.view = view;
         this.presenter = presenter;
         this.addEventHandlers();
+    }
+    private void addEventHandlers() {
         view.getDealButton().setOnAction(event -> deelKaartenUit());
-        view.getHitButton().setOnAction(event -> hit());
         view.getStandButton().setOnAction(event -> stand());
+        view.getHitButton().setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                hit();
+            }
+        });
     }
 
     public void deelKaartenUit(){
@@ -34,6 +44,8 @@ public class SpelpaginaPresenter {
     private void hit (){
         model.hit(this);
     }
+
+
 
     private void stand(){
         model.stand(this);
@@ -53,23 +65,4 @@ public class SpelpaginaPresenter {
 
     }
 
-    private void addEventHandlers() {
-//        view.getFoldButton().setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent actionEvent) {
-//                //view.saveInzet();
-//
-//                System.out.println(Arrays.toString(model.spelersArray));
-//
-//                ResultatenpaginaView resultatenpaginaView = new ResultatenpaginaView();
-//                Resultatenpaginapresenter resultatenpaginapresenter = new Resultatenpaginapresenter(model , resultatenpaginaView, presenter);
-//                presenter.setTitle("Blackjack");
-//                presenter.setHeight(700);
-//                presenter.setWidth(1400);
-//                //Om te kunnen switchen van mainView naar Applicatie
-//                view.getScene().setRoot(resultatenpaginaView);
-//                resultatenpaginaView.getScene().getWindow();
-//            }
-//        });
-    }
 }

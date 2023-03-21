@@ -86,6 +86,7 @@ public class Spel {
         }
     }
 
+
     public void stand(SpelpaginaPresenter spelpaginaPresenter){
         while (dealer.getTotaal() < 17) {
             dealer.voegKaartToe(pakKaarten.volgendeKaart());

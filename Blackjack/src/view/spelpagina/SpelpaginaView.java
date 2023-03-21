@@ -29,7 +29,7 @@ public class SpelpaginaView extends BorderPane {
     private ImageView dealerKaarten;
     private GridPane spelerKaartenPane;
     private BorderPane gamePane;
-    private GridPane dealerKaartenPane;
+    protected GridPane dealerKaartenPane;
     private Label playerScoreLabel;
     private Label dealerScoreLabel;
 
@@ -121,8 +121,12 @@ public class SpelpaginaView extends BorderPane {
                 dealerKaartenPane.add(imageView, index, 0);
                 index++;
             }
+            Image achterkant = new Image("resources/achterkand kaart.png");
+            ImageView achterkantView = new ImageView(achterkant);
+            dealerKaartenPane.add(achterkantView,index +1,0);
         });
     }
+
 
     public Button getHitButton() {
         return hit;
