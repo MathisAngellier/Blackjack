@@ -28,7 +28,7 @@ public class SpelpaginaPresenter {
         view.getStandButton().setOnAction(event -> stand());
     }
 
-    private void deelKaartenUit(){
+    public void deelKaartenUit(){
         model.deelKaartenUit(this);
     }
     private void hit (){
