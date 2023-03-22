@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="nu de juiste versie">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Kaart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Kaart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/PakKaarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/PakKaarten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/PakKaarten.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/PakKaarten.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />

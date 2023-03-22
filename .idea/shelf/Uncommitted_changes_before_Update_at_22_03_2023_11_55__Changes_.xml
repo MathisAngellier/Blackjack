@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_22_03_2023_11_55_[Changes]" date="1679482530535" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2023_11_55_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 22/03/2023 11:55 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Blackjack/model/Spel.class" />
+    <option name="AFTER_PATH" value="out/production/Blackjack/model/Spel.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2023_11_55_[Changes]/Spel.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Blackjack/view/spelpagina/SpelpaginaView.class" />
+    <option name="AFTER_PATH" value="out/production/Blackjack/view/spelpagina/SpelpaginaView.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2023_11_55_[Changes]/SpelpaginaView.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Blackjack/model/PakKaarten.class" />
+    <option name="AFTER_PATH" value="out/production/Blackjack/model/PakKaarten.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2023_11_55_[Changes]/PakKaarten.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" />
+    <option name="AFTER_PATH" value="out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2023_11_55_[Changes]/SpelpaginaPresenter.class" />
+  </binary>
+</changelist>

@@ -18,7 +18,7 @@ public class PakKaarten {
     public void vulKaarten() {
         String[] symbols = {"Spades", "Hearts", "Diamonds", "Clubs"};
         int[] waarden = {11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
-        String[] namen = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+        String[] namen = {"ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king"};
 
         for (int i = 0; i < symbols.length; i++) {
             for (int j = 0; j < waarden.length; j++) {
