@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.Spel;
 import model.ReaderWriter;
+import view.startpagina.StartpaginaPresenter;
 import view.startpagina.StartpaginaView;
 
 public class Resultatenpaginapresenter {
@@ -32,11 +33,12 @@ public class Resultatenpaginapresenter {
             @Override
             public void handle(ActionEvent actionEvent) {
                 StartpaginaView startpaginaView1 = new StartpaginaView();
-                Scene scene1 = new Scene(startpaginaView1);
-
+                StartpaginaPresenter startpaginaPresenter = new StartpaginaPresenter(model,startpaginaView1,stage);
+                stage.setHeight(450);
+                stage.setWidth(800);
+                stage.setResizable(false);
                 //Om te kunnen switchen van mainView naar Applicatie
                 view.getScene().setRoot(startpaginaView1);
-                startpaginaView1.getScene().getWindow().sizeToScene();
             }
         });
     }
