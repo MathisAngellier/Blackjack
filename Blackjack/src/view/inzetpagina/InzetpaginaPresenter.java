@@ -45,10 +45,11 @@ public class InzetpaginaPresenter {
                 SpelpaginaPresenter spelpaginaPresenter = new SpelpaginaPresenter(model , spelpaginaView, stage);
                 stage.setTitle("Blackjack");
                 stage.setHeight(700);
-                stage.setWidth(1400);
+                stage.setWidth(1300);
                 //Om te kunnen switchen van mainView naar Applicatie
                 view.getScene().setRoot(spelpaginaView);
                 spelpaginaView.getScene().getWindow();
+                spelpaginaPresenter.deelKaartenUit();
             }
         });
     }

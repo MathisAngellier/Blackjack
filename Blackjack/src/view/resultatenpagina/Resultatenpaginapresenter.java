@@ -31,12 +31,12 @@ public class Resultatenpaginapresenter {
         view.getTerugnaarstart().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                StartpaginaView startpaginaView = new StartpaginaView();
-                Scene scene = new Scene(startpaginaView);
+                StartpaginaView startpaginaView1 = new StartpaginaView();
+                Scene scene1 = new Scene(startpaginaView1);
 
                 //Om te kunnen switchen van mainView naar Applicatie
-                view.getScene().setRoot(startpaginaView);
-                startpaginaView.getScene().getWindow().sizeToScene();
+                view.getScene().setRoot(startpaginaView1);
+                startpaginaView1.getScene().getWindow().sizeToScene();
             }
         });
     }

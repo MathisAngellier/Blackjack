@@ -20,15 +20,21 @@ public class SpelpaginaView extends BorderPane {
     private Button hit;
     private Button stand;
     private Button deal;
+    private HBox buttonBox;
+    private Button stoppen;
+    private Button volgendeSpeler;
     private Label aantalGeld;
     private Label naamSpeler;
     private Label dealer;
     private Speler speler;
+    private GridPane rechts;
+    private VBox scoreBox;
 
     private ImageView spelerKaarten;
     private ImageView dealerKaarten;
     private GridPane spelerKaartenPane;
     private BorderPane gamePane;
+    private BorderPane bottom;
     private GridPane dealerKaartenPane;
     private Label playerScoreLabel;
     private Label dealerScoreLabel;
@@ -46,9 +52,15 @@ public class SpelpaginaView extends BorderPane {
         dealerKaartenPane = new GridPane();
         playerScoreLabel = new Label();
         dealerScoreLabel = new Label();
+        bottom = new BorderPane();
+        rechts = new GridPane();
+        stoppen = new Button("stop spel");
+        volgendeSpeler = new Button("volgende speler");
         stand = new Button("Stand");
         hit = new Button("Hit");
         deal = new Button("Deal");
+        buttonBox = new HBox(10, deal, hit, stand);
+        scoreBox = new VBox(10,  dealerScoreLabel,playerScoreLabel);
 
     }
     private void layoutNodes() {
@@ -62,15 +74,17 @@ public class SpelpaginaView extends BorderPane {
         dealerScoreLabel.setAlignment(Pos.CENTER);
         playerScoreLabel.setTextFill(Color.WHITE);
         // TODO: 19/03/2023 dealerscoreLabel moet weg wanneer alles werkt
-
-        HBox buttonBox = new HBox(10, deal, hit, stand);
         buttonBox.setAlignment(Pos.CENTER);
-        VBox scoreBox = new VBox(10,  dealerScoreLabel,playerScoreLabel);
         scoreBox.setAlignment(Pos.CENTER);
+        rechts.add(volgendeSpeler,0,0);
+        rechts.add(stoppen,0,1);
         setBackground(new Background(new BackgroundFill(Color.DARKGREEN, CornerRadii.EMPTY, Insets.EMPTY)));
         gamePane.setCenter(new VBox(10,  dealerKaartenPane,spelerKaartenPane));
-        gamePane.setBottom(buttonBox);
+        gamePane.setBottom(bottom);
+        bottom.setLeft(buttonBox);
+        bottom.setRight(rechts);
         gamePane.setTop(scoreBox);
+        rechts.setVisible(false);
 
     }
 
@@ -107,6 +121,18 @@ public class SpelpaginaView extends BorderPane {
         });
     }
 
+    public GridPane getRechts() {
+        return rechts;
+    }
+
+    public Button getStoppen() {
+        return stoppen;
+    }
+
+    public Button getVolgendeSpeler() {
+        return volgendeSpeler;
+    }
+
     public void updateDealerCards(Dealer dealer) {
         Platform.runLater(() -> {
             dealerKaartenPane.getChildren().clear();
@@ -121,8 +147,12 @@ public class SpelpaginaView extends BorderPane {
                 dealerKaartenPane.add(imageView, index, 0);
                 index++;
             }
+            Image achterkant = new Image("resources/achterkand kaart.png");
+            ImageView achterkantView = new ImageView(achterkant);
+            dealerKaartenPane.add(achterkantView,index +1,0);
         });
     }
+
 
     public Button getHitButton() {
         return hit;
