@@ -20,16 +20,20 @@ public class SpelpaginaView extends BorderPane {
     private Button hit;
     private Button stand;
     private Button deal;
+    private HBox buttonBox;
+    private Button volgendeSpeler;
     private Label aantalGeld;
     private Label naamSpeler;
     private Label dealer;
     private Speler speler;
+    private VBox rechts;
+    private VBox scoreBox;
 
     private ImageView spelerKaarten;
     private ImageView dealerKaarten;
     private GridPane spelerKaartenPane;
     private BorderPane gamePane;
-    protected GridPane dealerKaartenPane;
+    private GridPane dealerKaartenPane;
     private Label playerScoreLabel;
     private Label dealerScoreLabel;
 
@@ -46,9 +50,13 @@ public class SpelpaginaView extends BorderPane {
         dealerKaartenPane = new GridPane();
         playerScoreLabel = new Label();
         dealerScoreLabel = new Label();
+        rechts = new VBox();
+        volgendeSpeler = new Button("volgende speler");
         stand = new Button("Stand");
         hit = new Button("Hit");
         deal = new Button("Deal");
+        buttonBox = new HBox(10, deal, hit, stand);
+        scoreBox = new VBox(10,  dealerScoreLabel,playerScoreLabel);
 
     }
     private void layoutNodes() {
@@ -62,12 +70,10 @@ public class SpelpaginaView extends BorderPane {
         dealerScoreLabel.setAlignment(Pos.CENTER);
         playerScoreLabel.setTextFill(Color.WHITE);
         // TODO: 19/03/2023 dealerscoreLabel moet weg wanneer alles werkt
-
-        HBox buttonBox = new HBox(10, deal, hit, stand);
         buttonBox.setAlignment(Pos.CENTER);
-        VBox scoreBox = new VBox(10,  dealerScoreLabel,playerScoreLabel);
         scoreBox.setAlignment(Pos.CENTER);
         setBackground(new Background(new BackgroundFill(Color.DARKGREEN, CornerRadii.EMPTY, Insets.EMPTY)));
+        gamePane.setRight(rechts);
         gamePane.setCenter(new VBox(10,  dealerKaartenPane,spelerKaartenPane));
         gamePane.setBottom(buttonBox);
         gamePane.setTop(scoreBox);
