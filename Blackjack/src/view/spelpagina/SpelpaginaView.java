@@ -19,10 +19,9 @@ public class SpelpaginaView extends BorderPane {
 
     private Button hit;
     private Button stand;
-    private Button deal;
     private HBox buttonBox;
     private Button stoppen;
-    private Button volgendeSpeler;
+    private Button volgendeBeurt;
     private Label aantalGeld;
     private Label naamSpeler;
     private Label dealer;
@@ -55,11 +54,10 @@ public class SpelpaginaView extends BorderPane {
         bottom = new BorderPane();
         rechts = new GridPane();
         stoppen = new Button("stop spel");
-        volgendeSpeler = new Button("volgende speler");
+        volgendeBeurt = new Button("volgende beurt");
         stand = new Button("Stand");
         hit = new Button("Hit");
-        deal = new Button("Deal");
-        buttonBox = new HBox(10, deal, hit, stand);
+        buttonBox = new HBox(10, hit, stand);
         scoreBox = new VBox(10,  dealerScoreLabel,playerScoreLabel);
 
     }
@@ -76,7 +74,7 @@ public class SpelpaginaView extends BorderPane {
         // TODO: 19/03/2023 dealerscoreLabel moet weg wanneer alles werkt
         buttonBox.setAlignment(Pos.CENTER);
         scoreBox.setAlignment(Pos.CENTER);
-        rechts.add(volgendeSpeler,0,0);
+        rechts.add(volgendeBeurt,0,0);
         rechts.add(stoppen,0,1);
         setBackground(new Background(new BackgroundFill(Color.DARKGREEN, CornerRadii.EMPTY, Insets.EMPTY)));
         gamePane.setCenter(new VBox(10,  dealerKaartenPane,spelerKaartenPane));
@@ -129,8 +127,8 @@ public class SpelpaginaView extends BorderPane {
         return stoppen;
     }
 
-    public Button getVolgendeSpeler() {
-        return volgendeSpeler;
+    public Button getVolgendeBeurt() {
+        return volgendeBeurt;
     }
 
     public void updateDealerCards(Dealer dealer) {
@@ -162,8 +160,5 @@ public class SpelpaginaView extends BorderPane {
         return stand;
     }
 
-    public Button getDealButton() {
-        return deal;
-    }
 
 }

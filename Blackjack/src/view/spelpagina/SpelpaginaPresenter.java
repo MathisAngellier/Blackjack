@@ -7,8 +7,6 @@ import javafx.stage.Stage;
 import model.Dealer;
 import model.Spel;
 import model.Speler;
-import view.inzetpagina.InzetPaginaView;
-import view.inzetpagina.InzetpaginaPresenter;
 import view.resultatenpagina.ResultatenpaginaView;
 import view.resultatenpagina.Resultatenpaginapresenter;
 
@@ -50,13 +48,12 @@ public class SpelpaginaPresenter {
                 resultatenpaginaView.getScene().getWindow();
             }
         });
-        view.getVolgendeSpeler().setOnAction(new EventHandler<ActionEvent>() {
+        view.getVolgendeBeurt().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 deelKaartenUit();
             }
         });
-        view.getDealButton().setOnAction(event -> deelKaartenUit());
         view.getStandButton().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
