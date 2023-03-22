@@ -9,6 +9,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import model.Spel;
 import model.Speler;
+import view.spelpagina.SpelpaginaPresenter;
 
 import java.util.List;
 

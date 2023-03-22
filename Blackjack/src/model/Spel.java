@@ -1,11 +1,11 @@
 package model;
 
 
+import javafx.stage.Stage;
 import view.speleraanmaakpagina.SpeleraanmaakpaginaPresenter;
 import view.spelpagina.SpelpaginaPresenter;
 import view.spelpagina.SpelpaginaView;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class Spel {
@@ -15,6 +15,7 @@ public class Spel {
     private PakKaarten pakKaarten;
     private SpelpaginaView spelpaginaView;
     private SpelpaginaPresenter spelpaginaPresenter;
+
 
     ArrayList<Speler> spelers = SpeleraanmaakpaginaPresenter.getSpelers();
 
@@ -112,16 +113,22 @@ public class Spel {
     public void berekenScore(){
 
     }
-
+    private boolean gewonnen;
     public void eindeSpel(boolean winnaar){
         String resultaat;
         if (winnaar){
+            gewonnen = true;
             resultaat = "speler wint";
             System.out.println("speler wint");
         } else {
+            gewonnen = false;
             resultaat = "dealer wint";
             System.out.println("dealer wint");
         }
+    }
+
+    public boolean isGewonnen() {
+        return gewonnen;
     }
 
     public Dealer getDealer() {
@@ -131,6 +138,7 @@ public class Spel {
     public PakKaarten getPakKaarten() {
         return pakKaarten;
     }
+
 
 }
 
