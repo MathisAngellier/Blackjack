@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="deal knop gon">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/Resultatenpaginapresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/Resultatenpaginapresenter$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/Resultatenpaginapresenter$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="nu de juiste versie">
+      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/PakKaarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/PakKaarten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/PakKaarten.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/PakKaarten.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,24 +36,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/projectfinaal",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekd/OneDrive - Karel de Grote Hogeschool/school/22-23/OO Concepten/projectfinaal&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="model" />
@@ -93,8 +90,7 @@
       <workItem from="1679041940118" duration="7739000" />
       <workItem from="1679218739419" duration="1213000" />
       <workItem from="1679308030031" duration="1849000" />
-      <workItem from="1679331533187" duration="2120000" />
-      <workItem from="1679409315421" duration="21000000" />
+      <workItem from="1679331533187" duration="5794000" />
     </task>
     <task id="LOCAL-00001" summary="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek">
       <created>1678994853748</created>
@@ -152,63 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679309362810</updated>
     </task>
-    <task id="LOCAL-00009" summary="kaarten worden metteen gedealt">
-      <created>1679413041758</created>
+    <task id="LOCAL-00009" summary="keb die url error gefixt nu kunt ge prent kaarten te zien krijgen">
+      <created>1679333759518</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1679413041758</updated>
+      <updated>1679333759518</updated>
     </task>
-    <task id="LOCAL-00010" summary="achterkant gefixt">
-      <created>1679418802841</created>
+    <task id="LOCAL-00010" summary="nu de juiste versie">
+      <created>1679333844682</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1679418802841</updated>
+      <updated>1679333844682</updated>
     </task>
-    <task id="LOCAL-00011" summary="achterkant gefixt">
-      <created>1679470374038</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1679470374038</updated>
-    </task>
-    <task id="LOCAL-00012" summary="vboxen op juiste plek aangemaakt ipv layout">
-      <created>1679471612626</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1679471612626</updated>
-    </task>
-    <task id="LOCAL-00013" summary="pop up voor winnenn ipv print, added knop voor resultatenpagina en volgende speler die alleen zichtbaar word als de beurt om is">
-      <created>1679478217487</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1679478217487</updated>
-    </task>
-    <task id="LOCAL-00014" summary="pop up voor winnenn ipv print, added knop voor resultatenpagina en volgende speler die alleen zichtbaar word als de beurt om is">
-      <created>1679479622898</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1679479622898</updated>
-    </task>
-    <task id="LOCAL-00015" summary="knop gefixt">
-      <created>1679481820298</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1679481820298</updated>
-    </task>
-    <task id="LOCAL-00016" summary="deal knop gon">
-      <created>1679483321413</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1679483321413</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +180,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="codewithme, button om naar aanmaakpagina te gaan gefixt" />
     <MESSAGE value="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek" />
     <MESSAGE value="im going borderline insane, fok deeees" />
@@ -236,13 +189,9 @@
     <MESSAGE value="opslaan en read werkt" />
     <MESSAGE value="meest nutteloze commit ooit" />
     <MESSAGE value="score wordt nu gereset wanneer ge op deal drukt" />
-    <MESSAGE value="kaarten worden metteen gedealt" />
-    <MESSAGE value="achterkant gefixt" />
-    <MESSAGE value="vboxen op juiste plek aangemaakt ipv layout" />
-    <MESSAGE value="pop up voor winnenn ipv print, added knop voor resultatenpagina en volgende speler die alleen zichtbaar word als de beurt om is" />
-    <MESSAGE value="knop gefixt" />
-    <MESSAGE value="deal knop gon" />
-    <option name="LAST_COMMIT_MESSAGE" value="deal knop gon" />
+    <MESSAGE value="keb die url error gefixt nu kunt ge prent kaarten te zien krijgen" />
+    <MESSAGE value="nu de juiste versie" />
+    <option name="LAST_COMMIT_MESSAGE" value="nu de juiste versie" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
