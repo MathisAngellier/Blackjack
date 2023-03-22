@@ -7,6 +7,10 @@ import javafx.stage.Stage;
 import model.Dealer;
 import model.Spel;
 import model.Speler;
+import view.inzetpagina.InzetPaginaView;
+import view.inzetpagina.InzetpaginaPresenter;
+import view.resultatenpagina.ResultatenpaginaView;
+import view.resultatenpagina.Resultatenpaginapresenter;
 
 import java.util.List;
 
@@ -34,13 +38,22 @@ public class SpelpaginaPresenter {
         view.getStoppen().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                ResultatenpaginaView resultatenpaginaView = new ResultatenpaginaView();
+                Resultatenpaginapresenter resultatenpaginapresenter = new Resultatenpaginapresenter(model, resultatenpaginaView,stage);
+                stage.setHeight(450);
+                stage.setWidth(800);
+                stage.setResizable(false);
+                stage.setTitle("Blackjack");
 
+                //Om te kunnen switchen van mainView naar Applicatie
+                view.getScene().setRoot(resultatenpaginaView);
+                resultatenpaginaView.getScene().getWindow();
             }
         });
         view.getVolgendeSpeler().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-
+                deelKaartenUit();
             }
         });
         view.getDealButton().setOnAction(event -> deelKaartenUit());

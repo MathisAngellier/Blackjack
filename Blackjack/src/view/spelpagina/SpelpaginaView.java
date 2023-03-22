@@ -27,13 +27,14 @@ public class SpelpaginaView extends BorderPane {
     private Label naamSpeler;
     private Label dealer;
     private Speler speler;
-    private VBox rechts;
+    private GridPane rechts;
     private VBox scoreBox;
 
     private ImageView spelerKaarten;
     private ImageView dealerKaarten;
     private GridPane spelerKaartenPane;
     private BorderPane gamePane;
+    private BorderPane bottom;
     private GridPane dealerKaartenPane;
     private Label playerScoreLabel;
     private Label dealerScoreLabel;
@@ -51,7 +52,8 @@ public class SpelpaginaView extends BorderPane {
         dealerKaartenPane = new GridPane();
         playerScoreLabel = new Label();
         dealerScoreLabel = new Label();
-        rechts = new VBox();
+        bottom = new BorderPane();
+        rechts = new GridPane();
         stoppen = new Button("stop spel");
         volgendeSpeler = new Button("volgende speler");
         stand = new Button("Stand");
@@ -74,11 +76,13 @@ public class SpelpaginaView extends BorderPane {
         // TODO: 19/03/2023 dealerscoreLabel moet weg wanneer alles werkt
         buttonBox.setAlignment(Pos.CENTER);
         scoreBox.setAlignment(Pos.CENTER);
-        rechts.getChildren().add(volgendeSpeler);
+        rechts.add(volgendeSpeler,0,0);
+        rechts.add(stoppen,0,1);
         setBackground(new Background(new BackgroundFill(Color.DARKGREEN, CornerRadii.EMPTY, Insets.EMPTY)));
-        gamePane.setRight(rechts);
         gamePane.setCenter(new VBox(10,  dealerKaartenPane,spelerKaartenPane));
-        gamePane.setBottom(buttonBox);
+        gamePane.setBottom(bottom);
+        bottom.setLeft(buttonBox);
+        bottom.setRight(rechts);
         gamePane.setTop(scoreBox);
         rechts.setVisible(false);
 
@@ -117,7 +121,7 @@ public class SpelpaginaView extends BorderPane {
         });
     }
 
-    public VBox getRechts() {
+    public GridPane getRechts() {
         return rechts;
     }
 
