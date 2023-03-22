@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="vboxen op juiste plek aangemaakt ipv layout">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/model/Spel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/resultatenpagina/ResultatenpaginaView.java" afterDir="false" />
+    <list default="true" id="158f0177-3049-4485-8e3d-6cbb2fa147fe" name="Changes" comment="pop up voor winnenn ipv print, added knop voor resultatenpagina en volgende speler die alleen zichtbaar word als de beurt om is">
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaPresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blackjack/src/view/spelpagina/SpelpaginaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/model/Spel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/spelpagina/SpelpaginaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blackjack/view/resultatenpagina/ResultatenpaginaView.class" afterDir="false" />
     </list>
     <list id="7cd5f73a-11fb-4c6c-bdfc-ad34f662307f" name="Changes by alekd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +91,7 @@
       <workItem from="1679218739419" duration="1213000" />
       <workItem from="1679308030031" duration="1849000" />
       <workItem from="1679331533187" duration="2120000" />
-      <workItem from="1679409315421" duration="16029000" />
+      <workItem from="1679409315421" duration="17280000" />
     </task>
     <task id="LOCAL-00001" summary="die spelers array waar ik aan codewithme mee bezig was afgemaakt, moet nog wel de code opruimen maar upload dit al voor het geval ik het breek">
       <created>1678994853748</created>
@@ -182,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679471612626</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="pop up voor winnenn ipv print, added knop voor resultatenpagina en volgende speler die alleen zichtbaar word als de beurt om is">
+      <created>1679478217487</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679478217487</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +214,8 @@
     <MESSAGE value="kaarten worden metteen gedealt" />
     <MESSAGE value="achterkant gefixt" />
     <MESSAGE value="vboxen op juiste plek aangemaakt ipv layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="vboxen op juiste plek aangemaakt ipv layout" />
+    <MESSAGE value="pop up voor winnenn ipv print, added knop voor resultatenpagina en volgende speler die alleen zichtbaar word als de beurt om is" />
+    <option name="LAST_COMMIT_MESSAGE" value="pop up voor winnenn ipv print, added knop voor resultatenpagina en volgende speler die alleen zichtbaar word als de beurt om is" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

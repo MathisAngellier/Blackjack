@@ -31,6 +31,18 @@ public class SpelpaginaPresenter {
     }
 
     private void addEventHandlers() {
+        view.getStoppen().setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+
+            }
+        });
+        view.getVolgendeSpeler().setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+
+            }
+        });
         view.getDealButton().setOnAction(event -> deelKaartenUit());
         view.getStandButton().setOnAction(new EventHandler<ActionEvent>() {
             @Override

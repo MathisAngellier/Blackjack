@@ -121,6 +121,14 @@ public class SpelpaginaView extends BorderPane {
         return rechts;
     }
 
+    public Button getStoppen() {
+        return stoppen;
+    }
+
+    public Button getVolgendeSpeler() {
+        return volgendeSpeler;
+    }
+
     public void updateDealerCards(Dealer dealer) {
         Platform.runLater(() -> {
             dealerKaartenPane.getChildren().clear();
