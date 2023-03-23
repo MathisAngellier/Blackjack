@@ -22,15 +22,8 @@ public class SpelpaginaView extends BorderPane {
     private HBox buttonBox;
     private Button stoppen;
     private Button volgendeBeurt;
-    private Label aantalGeld;
-    private Label naamSpeler;
-    private Label dealer;
-    private Speler speler;
     private GridPane rechts;
     private VBox scoreBox;
-
-    private ImageView spelerKaarten;
-    private ImageView dealerKaarten;
     private GridPane spelerKaartenPane;
     private BorderPane gamePane;
     private BorderPane bottom;
@@ -90,17 +83,6 @@ public class SpelpaginaView extends BorderPane {
         this.getChildren().add(gamePane);
     }
 
-    public void updatePlayerScore(int score) {
-        Platform.runLater(() -> {
-            playerScoreLabel.setText("Player Score: " + score);
-        });
-    }
-
-    public void updateDealerScore(int score) {
-        Platform.runLater(() -> {
-            dealerScoreLabel.setText("Dealer Score: " + score);
-        });
-    }
 
     public void updatePlayerCards(Speler speler) {
         Platform.runLater(() -> {
