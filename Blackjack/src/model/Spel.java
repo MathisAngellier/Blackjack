@@ -5,10 +5,6 @@ import view.speleraanmaakpagina.SpeleraanmaakpaginaPresenter;
 import view.spelpagina.SpelpaginaPresenter;
 import java.util.ArrayList;
 
-/// TODO: 23/03/2023 documentatie in deze klasse
-/**
- *
- */
 public class Spel {
     private Dealer dealer;
     private PakKaarten pakKaarten;
@@ -29,10 +25,20 @@ public class Spel {
         this.spelersArray = spelersArray;
     }
 
+    /**
+     * Hier maakt men de dealer aan en een niew pakkaarten.
+     */
     public Spel() {
         dealer = new Dealer();
         pakKaarten = new PakKaarten();
     }
+
+    /**
+     * Hier haalt men de kaarten op en geeft de spelers en dealer 2 kaarten,
+     * men schudt ook het pakkaarten zodat men een willekeurige kaart krijgt,
+     * men roept deze methode op in Spelpresenter.
+     * @param spelpaginaPresenter
+     */
 
     public void deelKaartenUit(SpelpaginaPresenter spelpaginaPresenter){
         for (int i = 0; i < spelers.size(); i++) {
@@ -55,6 +61,12 @@ public class Spel {
         spelpaginaPresenter.updateView();
     }
 
+    /**
+     * Hier geeft men de speler een extra kaart en controleert men of de speler niet meer dan 21 heeft,
+     * als dit zo is zet men winnaar op false, word opgeroepen in de Spelpaginapresenter.
+     * @param spelpaginaPresenter
+     */
+
     public void hit(SpelpaginaPresenter spelpaginaPresenter){
 
         for (int i = 0; i < spelers.size(); i++) {
@@ -67,6 +79,12 @@ public class Spel {
         }
     }
 
+    /**
+     * Hier geeft men de dealer kaarten tot de waarde van de kaarten meer is dan 17,
+     * vervolgens controleert men wie gewonnen is en past men de boolean eindespel aan,
+     * deze methode word opgeroepen in de klasse Spelpaginapresenter.
+     * @param spelpaginaPresenter
+     */
 
     public void stand(SpelpaginaPresenter spelpaginaPresenter){
         while (dealer.getTotaal() < 17) {
