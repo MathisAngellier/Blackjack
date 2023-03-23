@@ -6,7 +6,6 @@ import javafx.stage.Stage;
 import model.Spel;
 import view.spelpagina.SpelpaginaPresenter;
 import view.spelpagina.SpelpaginaView;
-import java.util.Arrays;
 
 
 public class InzetpaginaPresenter {
