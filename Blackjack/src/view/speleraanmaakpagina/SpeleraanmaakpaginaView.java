@@ -17,10 +17,10 @@ public class SpeleraanmaakpaginaView extends BorderPane {
 
     public SpeleraanmaakpaginaView(int  hoeveelheid) {
         this.hoeveelheid = hoeveelheid;
-        initialiseNodes(hoeveelheid);
+        initialiseNodes();
         layoutNodes();
     }
-    private void initialiseNodes(int hoeveelheid) {
+    private void initialiseNodes() {
         bevestigen = new Button("bevestigen");
     }
     private void layoutNodes() {

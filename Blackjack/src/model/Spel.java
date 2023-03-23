@@ -7,7 +7,7 @@ import view.spelpagina.SpelpaginaPresenter;
 import view.spelpagina.SpelpaginaView;
 import java.util.ArrayList;
 
-
+/// TODO: 23/03/2023 documentatie in deze klasse + code opkuisen 
 public class Spel {
     private Dealer dealer;
     private int aantalSpelers = 3;

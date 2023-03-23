@@ -8,7 +8,6 @@ import javafx.scene.layout.*;
 public class StartpaginaView extends BorderPane {
     private Button niewegame;
     private Button loadgame;
-    private Label label;
     public StartpaginaView() {
         initialiseNodes();
         layoutNodes();
