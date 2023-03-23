@@ -1,7 +1,5 @@
 package model;
 
-import javafx.scene.image.Image;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,8 +7,6 @@ import java.util.List;
 public class PakKaarten {
     private List<Kaart> kaarten;
     private int index;
-    private Kaart kaart;
-
     public PakKaarten() {
         this.kaarten = new ArrayList<>();
     }
@@ -22,7 +18,7 @@ public class PakKaarten {
 
         for (int i = 0; i < symbols.length; i++) {
             for (int j = 0; j < waarden.length; j++) {
-                kaarten.add(new Kaart(waarden[j],symbols[i],namen[j],new Image(String.format("file:resources/pakKaarten/%s_%s.png", namen[j].toLowerCase(), symbols[i].toLowerCase()),200,290.4,false,true)));
+                kaarten.add(new Kaart(waarden[j],symbols[i],namen[j]));
             }
         }
     }
@@ -42,12 +38,5 @@ public class PakKaarten {
         return kaarten.get(index++);
     }
 
-    public List<Kaart> getKaarten() {
-        return kaarten;
-    }
-
-    public void setKaarten(List<Kaart> kaarten) {
-        this.kaarten = kaarten;
-    }
 }
 

@@ -1,31 +1,21 @@
 package model;
 
 
-import javafx.stage.Stage;
 import view.speleraanmaakpagina.SpeleraanmaakpaginaPresenter;
 import view.spelpagina.SpelpaginaPresenter;
-import view.spelpagina.SpelpaginaView;
 import java.util.ArrayList;
 
-/// TODO: 23/03/2023 documentatie in deze klasse + code opkuisen 
+/// TODO: 23/03/2023 documentatie in deze klasse
+/**
+ *
+ */
 public class Spel {
     private Dealer dealer;
-    private int aantalSpelers = 3;
-    private Speler speler;
     private PakKaarten pakKaarten;
-    private SpelpaginaView spelpaginaView;
-    private SpelpaginaPresenter spelpaginaPresenter;
-
 
     ArrayList<Speler> spelers = SpeleraanmaakpaginaPresenter.getSpelers();
 
     public Speler[] spelersArray = spelers.toArray(new Speler[0]);
-
-
-
-    public void setSpelersArrayList(ArrayList<Speler> spelersArrayList) {
-        this.spelersArray = spelersArrayList.toArray(new Speler[0]);
-    }
 
     public ArrayList<Speler> getSpelers() {
         return spelers;
@@ -39,19 +29,13 @@ public class Spel {
         this.spelersArray = spelersArray;
     }
 
-    public void setAantalSpelers(int hoeveelheidspelers) {
-        this.aantalSpelers = aantalSpelers;
-    }
-
     public Spel() {
-        this.spelersArray = spelersArray;
         dealer = new Dealer();
         pakKaarten = new PakKaarten();
     }
 
     public void deelKaartenUit(SpelpaginaPresenter spelpaginaPresenter){
         for (int i = 0; i < spelers.size(); i++) {
-            System.out.println(spelers.get(i));
             spelers.get(i).verwijderHand();
             spelers.get(i).getHand().setWaarde(0);
         }
@@ -69,10 +53,6 @@ public class Spel {
         }
         dealer.voegKaartToe(pakKaarten.volgendeKaart());
         spelpaginaPresenter.updateView();
-        System.out.println(pakKaarten);
-        System.out.println("dealer = " + dealer.getTotaal());
-        System.out.println("speler = " + spelers.get(0).getTotaal());
-        //spelpaginaPresenter.updateView();
     }
 
     public void hit(SpelpaginaPresenter spelpaginaPresenter){
@@ -96,36 +76,23 @@ public class Spel {
         for (int i = 0; i < spelers.size(); i++) {
             if (dealer.getTotaal() > 21){
                 eindeSpel(false);
-                System.out.println("dealer kapot");
             } else if (dealer.getTotaal() > spelers.get(i).getTotaal() && dealer.getTotaal() < 22){
                 eindeSpel(false);
             } else if (spelers.get(i).getTotaal() > dealer.getTotaal()){
                 eindeSpel(true);
             } else {
                 eindeSpel(false);
-                System.out.println("gelijke waarde dus dealer wint");
             }
         }
         spelpaginaPresenter.updateView();
 
     }
 
-    public void berekenScore(){
-
-    }
     private boolean gewonnen;
     public void eindeSpel(boolean winnaar){
-        String resultaat;
-        if (winnaar){
-            gewonnen = true;
-            resultaat = "speler wint";
-            System.out.println("speler wint");
-        } else {
-            gewonnen = false;
-            resultaat = "dealer wint";
-            System.out.println("dealer wint");
-        }
+        gewonnen = winnaar;
     }
+
 
     public boolean isGewonnen() {
         return gewonnen;
@@ -135,9 +102,6 @@ public class Spel {
         return dealer;
     }
 
-    public PakKaarten getPakKaarten() {
-        return pakKaarten;
-    }
 
 
 }

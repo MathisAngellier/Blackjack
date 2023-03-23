@@ -5,14 +5,10 @@ import javafx.event.EventHandler;
 import javafx.stage.Stage;
 import model.ReaderWriter;
 import model.Spel;
-import model.Speler;
 import view.inzetpagina.InzetPaginaView;
-import view.inzetpagina.InzetpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaPresenter;
 import view.niewspelaanmaakpagina.NiewspelaanmaakpaginaView;
 
-import java.io.IOException;
-import java.util.List;
 
 
 public class  StartpaginaPresenter {
@@ -46,7 +42,7 @@ public class  StartpaginaPresenter {
                     readerWriter.loadSpelers();
 
                     InzetPaginaView inzetPaginaView = new InzetPaginaView();
-                    InzetpaginaPresenter inzetpaginaPresenter = new InzetpaginaPresenter(model , inzetPaginaView, stage);
+                    //InzetpaginaPresenter inzetpaginaPresenter = new InzetpaginaPresenter(model , inzetPaginaView, stage);
                     stage.setTitle("Applicatie");
 
                     //Om te kunnen switchen van mainView naar Applicatie

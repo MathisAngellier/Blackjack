@@ -1,13 +1,12 @@
 package view.inzetpagina;
 
-import javafx.scene.Node;
+
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import model.Spel;
 import model.Speler;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,7 +52,7 @@ public class InzetPaginaView extends BorderPane {
         int row = 0;
         for (Speler speler : model.getSpelersArray()) {
             Label naamLabel = new Label(speler.getNaam());
-            Label geldLabel = new Label(" totaal €"+ String.valueOf(speler.getGeld()));
+            Label geldLabel = new Label(" totaal €"+ (speler.getGeld()));
             Label inzetLabel = new Label(" inzet :");
             TextField inzetfield = new TextField();
             naamLabel.setTextFill(Color.WHITE);
@@ -64,7 +63,6 @@ public class InzetPaginaView extends BorderPane {
             gp.add(inzetLabel,2,row);
             gp.add(inzetfield,3,row);
             inzetFields.add(inzetfield); // add the inzetfield to the list of inzet fields
-            System.out.println(model.getSpelersArray().length);
             row++;
         }
     }
@@ -92,13 +90,6 @@ public class InzetPaginaView extends BorderPane {
             row++;
         }
     }
-
-
-
-    public GridPane getGp() {
-        return gp;
-    }
-
 
     public Spel getModel() {
         return model;

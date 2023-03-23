@@ -40,10 +40,6 @@ public class Hand {
 
     }
 
-    public int getAantalKaarten() {
-        return aantalKaarten;
-    }
-
     public int getWaarde() {
         return waarde;
     }

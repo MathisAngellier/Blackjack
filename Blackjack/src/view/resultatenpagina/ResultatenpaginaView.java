@@ -2,23 +2,18 @@ package view.resultatenpagina;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import model.Spel;
 import model.Speler;
-import view.spelpagina.SpelpaginaPresenter;
-
-import java.util.List;
 
 public class ResultatenpaginaView extends BorderPane {
     private GridPane gp;
     private VBox vbox;
     private VBox top;
     private Spel model;
-    private List<TextField> inzetFields;
     private Label titel;
     private Button terugnaarstart;
     private Button save;
@@ -55,7 +50,7 @@ public class ResultatenpaginaView extends BorderPane {
         int row = 0;
         for (Speler speler : model.getSpelersArray()) {
             Label naamLabel = new Label(speler.getNaam());
-            Label geldLabel = new Label(" totaal €"+ String.valueOf(speler.getGeld()));
+            Label geldLabel = new Label(" totaal €"+ (speler.getGeld()));
             naamLabel.setTextFill(Color.WHITE);
             geldLabel.setTextFill(Color.WHITE);
             gp.add(naamLabel, 0, row);

@@ -1,16 +1,12 @@
 package model;
 
-import model.Hand;
-import model.Kaart;
+
 
 public class Dealer {
 
     private Hand hand;
-    private int totaal;
-
     public Dealer(){
         this.hand = new Hand();
-        this.totaal = totaal;
     }
 
     public void voegKaartToe(Kaart kaart){
@@ -25,9 +21,6 @@ public class Dealer {
         return hand.getWaarde();
     }
 
-    public void setTotaal(int totaal) {
-        this.totaal = totaal;
-    }
 
     @Override
     public String toString() {
