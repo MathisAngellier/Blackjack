@@ -110,11 +110,6 @@ public class Spel {
         gewonnen = winnaar;
     }
 
-
-    public boolean isGewonnen() {
-        return gewonnen;
-    }
-
     public Dealer getDealer() {
         return dealer;
     }
