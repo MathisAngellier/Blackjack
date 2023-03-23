@@ -5,10 +5,7 @@ import view.speleraanmaakpagina.SpeleraanmaakpaginaPresenter;
 import view.spelpagina.SpelpaginaPresenter;
 import java.util.ArrayList;
 
-/// TODO: 23/03/2023 documentatie in deze klasse
-/**
- *
- */
+
 public class Spel {
     private Dealer dealer;
     private PakKaarten pakKaarten;
@@ -34,6 +31,14 @@ public class Spel {
         pakKaarten = new PakKaarten();
     }
 
+    /**
+     * Hier word iedere speler zijn hand leeg gezet,
+     * dan vult men het pakkaarten opniew en zet de volgorde random,
+     * vervolgens geeft men iedere speler en de dealer hun kaarten.
+     * Deze methode wordt aangeroepen wanneer men naar de spelpagina gaat of
+     * wanneer de volgende speler aan de beurt is.
+     * @param spelpaginaPresenter
+     */
     public void deelKaartenUit(SpelpaginaPresenter spelpaginaPresenter){
         for (int i = 0; i < spelers.size(); i++) {
             spelers.get(i).verwijderHand();
@@ -55,6 +60,13 @@ public class Spel {
         spelpaginaPresenter.updateView();
     }
 
+    /**
+     * Deze methode word aangeroepen als men de hit knopt indrukt op de Spelpagina.
+     * Men geeft de speler een extra kaart en controleert of de speler niet meer dan 21 heeft,
+     * indien dit het geval is zet men boolean winnaar op false
+     * @param spelpaginaPresenter
+     */
+
     public void hit(SpelpaginaPresenter spelpaginaPresenter){
 
         for (int i = 0; i < spelers.size(); i++) {
@@ -67,7 +79,12 @@ public class Spel {
         }
     }
 
-
+    /**
+     * Deze methode word aangeroepen als men de stand knopt indrukt op de Spelpagina.
+     * men geeft de dealer kaarten tot hij meer dan 17 heeft, als dit zo is controleert men wie er gewonnen is.
+     * vervolgens past men de boolean eindeSpel aan.
+     * @param spelpaginaPresenter
+     */
     public void stand(SpelpaginaPresenter spelpaginaPresenter){
         while (dealer.getTotaal() < 17) {
             dealer.voegKaartToe(pakKaarten.volgendeKaart());
